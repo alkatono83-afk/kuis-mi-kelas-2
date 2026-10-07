@@ -1,0 +1,11 @@
+{
+  "appId": "com.mi.kuiskelas2",
+  "appName": "Kuis MI Kelas 2",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}
