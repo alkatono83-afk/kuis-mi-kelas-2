@@ -1,0 +1,1436 @@
+﻿<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kuis MI Kelas 2 - FINAL</title>
+<style>
+*{box-sizing:border-box}body{font-family:"Trebuchet MS",Arial,sans-serif;background:linear-gradient(180deg,#eaf7ff 0%,#fffdf4 48%,#eefcf4 100%);margin:0;color:#172033;min-height:100vh}header{background:linear-gradient(135deg,#1477e8,#2453d4);color:white;padding:16px 14px 22px;text-align:center;position:relative;overflow:hidden;box-shadow:0 5px 18px #174ea633}header:before,header:after{content:"";position:absolute;border-radius:50%;background:#ffffff18}header:before{width:180px;height:180px;left:-70px;top:-85px}header:after{width:220px;height:220px;right:-90px;bottom:-135px}.schoolHead{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:14px;max-width:900px;margin:auto}.logo{width:82px;height:82px;flex:0 0 82px;background:white;border-radius:50%;padding:4px;box-shadow:0 5px 14px #002c6b55}.schoolTitle{font-size:clamp(26px,5vw,46px);font-weight:900;letter-spacing:.3px;text-shadow:0 2px 2px #00377c66}.schoolSub{font-size:14px;font-weight:bold;opacity:.95;margin-top:3px}.miniStars{position:absolute;inset:0;pointer-events:none;font-size:22px}.miniStars span{position:absolute;animation:float 3s ease-in-out infinite}.miniStars span:nth-child(1){left:8%;top:22%}.miniStars span:nth-child(2){right:12%;top:18%;animation-delay:.8s}.miniStars span:nth-child(3){left:18%;bottom:8%;animation-delay:1.3s}.miniStars span:nth-child(4){right:24%;bottom:7%;animation-delay:1.9s}@keyframes float{50%{transform:translateY(-7px) rotate(5deg)}}main{max-width:900px;margin:18px auto;padding:10px 14px 35px}.card{background:#fff;border:2px solid #dbeafe;border-radius:22px;padding:18px;margin-bottom:16px;box-shadow:0 6px 20px #1e3a8a12}.welcomeBanner{background:linear-gradient(135deg,#dff5ff,#eefcf4);border:2px dashed #58a6ff;text-align:center}.welcomeBanner h2{margin:5px 0 8px;color:#1754bd}.funline{font-size:17px;font-weight:bold;color:#0f766e}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{font-weight:bold;font-size:14px;color:#334155}input,textarea,select,button{width:100%;padding:12px;border-radius:12px;border:2px solid #cbd5e1;font:inherit;box-sizing:border-box}input:focus,textarea:focus,select:focus{outline:none;border-color:#3b82f6;box-shadow:0 0 0 3px #3b82f622}button{background:linear-gradient(135deg,#2563eb,#1477e8);color:white;border:0;font-weight:800;cursor:pointer;box-shadow:0 3px 9px #2563eb33;transition:.15s}button:hover{transform:translateY(-1px)}button.gray{background:#e8f0fb;color:#17304f;box-shadow:none}.hidden{display:none}.q{font-size:20px;font-weight:bold;line-height:1.5;margin:18px 0}.opt{display:block;text-align:left;margin:9px 0;background:#f8fbff;color:#172033;border:2px solid #dbeafe}.opt.sel{border-color:#2563eb;background:#eff6ff}.bar{height:9px;background:#e2e8f0;border-radius:9px;overflow:hidden}.bar div{height:100%;background:linear-gradient(90deg,#22c55e,#2563eb);border-radius:9px}.nums{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;margin:12px 0}.nums button{padding:7px;background:#e2e8f0;color:#172033;box-shadow:none}.nums .done{background:#86efac}.nums .cur{background:#2563eb;color:white}.row{display:flex;gap:8px}.muted{color:#64748b}.bankitem{padding:12px;border:2px solid #e2e8f0;border-radius:14px;margin:8px 0;background:#fbfdff;overflow-wrap:anywhere;word-break:break-word}.score{font-size:48px;text-align:center;color:#2563eb;font-weight:800}.rolebox{display:flex;gap:8px;flex-wrap:wrap}.rolebox button{flex:1;min-width:120px}.danger{background:#dc2626!important;color:white!important}.resultitem{padding:10px;border:1px solid #e2e8f0;border-radius:10px;margin:7px 0;background:#f8fafc}.roleBadge{display:inline-block;padding:6px 12px;border-radius:999px;background:#dbeafe;color:#1d4ed8;font-weight:900;margin:4px 0}.adminBox{border:2px solid #fbbf24;background:#fffbeb}.tip{padding:12px;border-radius:14px;background:#ecfeff;border:2px dashed #67e8f9;margin:10px 0;font-weight:bold;color:#155e75}.rankingBanner{margin:14px 0 18px;border:2px solid #facc15;border-radius:18px;background:linear-gradient(135deg,#fffbea,#fff7ed);box-shadow:0 5px 16px #f59e0b22;overflow:hidden}.rankingTitle{text-align:center;font-weight:900;color:#92400e;padding:10px 12px 6px;font-size:16px}.rankingMarquee{overflow:hidden;white-space:nowrap;padding:4px 0 11px}.rankingTrack{display:inline-block;padding-left:100%;font-weight:800;color:#78350f;animation:rankingRun 22s linear infinite}.rankingTrack:hover{animation-play-state:paused}@keyframes rankingRun{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}.rankingBanner.empty .rankingTrack{animation:none;display:block;text-align:center;padding:0 12px;color:#64748b}.rankingBadge{display:inline-block;padding:4px 9px;border-radius:999px;margin:0 8px;background:#fff;border:1px solid #fde68a}.settingsLogoPreview{width:100px;height:100px;border:2px dashed #94a3b8;border-radius:18px;padding:6px;object-fit:contain;margin-top:8px}.footerFun{text-align:center;font-weight:bold;color:#64748b;padding:8px}.loginLoading{position:fixed;inset:0;background:rgba(15,23,42,.42);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;z-index:9999}.loginLoadingBox{background:white;border-radius:22px;padding:26px 30px;min-width:220px;text-align:center;box-shadow:0 15px 45px rgba(0,0,0,.22)}.loginSpinner{width:52px;height:52px;margin:0 auto 14px;border:6px solid #dbeafe;border-top-color:#2563eb;border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.loginLoadingTitle{font-weight:900;color:#17304f;font-size:17px}.loginLoadingText{margin-top:5px;color:#64748b;font-size:13px}.loginLoading.hidden{display:none}.featureGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.feature{background:#f8fbff;border:2px solid #dbeafe;border-radius:16px;padding:12px;text-align:center;font-weight:bold}.feature b{font-size:27px;display:block;margin-bottom:5px}@media(max-width:600px){.grid{grid-template-columns:1fr}.nums{grid-template-columns:repeat(5,1fr)}.schoolHead{gap:9px}.logo{width:65px;height:65px;flex-basis:65px}.schoolTitle{font-size:27px}.featureGrid{grid-template-columns:1fr}.row{flex-direction:column}}
+</style>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+
+<style>
+.passwordWrap{position:relative;display:flex;align-items:center}
+.passwordWrap input{width:100%;padding-right:46px}
+.passwordToggle{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:38px!important;min-width:38px;padding:7px 6px!important;margin:0!important;background:transparent!important;border:0!important;box-shadow:none!important;color:inherit!important;font-size:18px;cursor:pointer}
+.passwordToggle:hover{background:transparent!important}.passwordToggle:active{background:#eaf2ff!important}.passwordToggle{-webkit-tap-highlight-color:transparent;touch-action:manipulation;user-select:none;-webkit-user-select:none;z-index:3;display:flex!important;align-items:center;justify-content:center}.loginError{display:none;margin:10px 0 0;padding:10px 12px;border-radius:12px;background:#fef2f2;border:1px solid #fca5a5;color:#b91c1c;font-weight:800;font-size:14px}.loginError.show{display:block}
+</style>
+<style>
+.decorSettingsGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.decorPreview{min-height:90px;border:2px dashed #94a3b8;border-radius:16px;padding:10px;background:#f8fafc;display:flex;align-items:center;justify-content:center;gap:14px;overflow:hidden}.decorPreview img{width:58px;height:58px;object-fit:contain;border-radius:12px}.miniStars.decor-off{display:none}.miniStars.decor-imgs span{width:58px;height:58px;display:flex;align-items:center;justify-content:center}.miniStars.decor-imgs img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 5px rgba(0,0,0,.15))}.miniStars.decor-slow span{animation-duration:5s}.miniStars.decor-normal span{animation-duration:3s}.miniStars.decor-fast span{animation-duration:1.8s}
+.miniStars.motion-crawl span{animation-name:crawlRight;animation-timing-function:linear;animation-iteration-count:infinite;animation-duration:12s}.miniStars.motion-crawl span:nth-child(2){animation-name:crawlLeft;animation-delay:2s}.miniStars.motion-crawl span:nth-child(3){animation-name:crawlRight;animation-delay:4s}.miniStars.motion-crawl span:nth-child(4){animation-name:crawlLeft;animation-delay:6s}.miniStars.motion-float span{animation-name:float}.miniStars.motion-bounce span{animation-name:bounceDecor}.miniStars.motion-drift span{animation-name:driftDecor}
+@keyframes crawlRight{0%{left:-10%;transform:translateX(0) scaleX(1)}48%{transform:translateX(0) scaleX(1)}50%{transform:translateX(0) scaleX(-1)}98%{left:100%;transform:translateX(0) scaleX(-1)}100%{left:100%;transform:translateX(0) scaleX(1)}}
+@keyframes crawlLeft{0%{left:100%;transform:translateX(0) scaleX(-1)}48%{transform:translateX(0) scaleX(-1)}50%{transform:translateX(0) scaleX(1)}98%{left:-10%;transform:translateX(0) scaleX(1)}100%{left:-10%;transform:translateX(0) scaleX(-1)}}
+@keyframes bounceDecor{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes driftDecor{0%,100%{transform:translate(0,0) rotate(-3deg)}50%{transform:translate(8px,-10px) rotate(3deg)}}
+.miniStars.motion-crawl.decor-slow span{animation-duration:18s}.miniStars.motion-crawl.decor-normal span{animation-duration:12s}.miniStars.motion-crawl.decor-fast span{animation-duration:7s}.miniStars.motion-crawl span{top:auto!important;bottom:4px}.miniStars.motion-crawl span:nth-child(2){bottom:12px}.miniStars.motion-crawl span:nth-child(3){bottom:7px}.miniStars.motion-crawl span:nth-child(4){bottom:16px}.miniStars.motion-crawl.decor-imgs span{width:42px;height:42px}.miniStars.motion-crawl.decor-imgs img{width:100%;height:100%;object-fit:contain}
+@media(max-width:600px){.decorSettingsGrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body><div id="loginLoading" class="loginLoading hidden" aria-live="polite"><div class="loginLoadingBox"><div class="loginSpinner"></div><div class="loginLoadingTitle">Sedang masuk...</div><div class="loginLoadingText">Menghubungkan ke sistem dan memuat data.</div></div></div><header><div id="miniStars" class="miniStars"><span>⭐</span><span>✨</span><span>🌟</span><span>📚</span></div><div class="schoolHead"><div class="logo" aria-label="Logo sekolah"><img id="schoolLogo" alt="Logo sekolah" data-default-src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2247%22 fill=%22%23087443%22 stroke=%22%23f5c542%22 stroke-width=%224%22/%3E%3Ctext x=%2250%22 y=%2258%22 text-anchor=%22middle%22 font-size=%2224%22 font-weight=%22900%22 fill=%22white%22%3EMI%3C/text%3E%3C/svg%3E" style="width:100%;height:100%;object-fit:contain;border-radius:50%" src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2247%22 fill=%22%23087443%22 stroke=%22%23f5c542%22 stroke-width=%224%22/%3E%3Ctext x=%2250%22 y=%2258%22 text-anchor=%22middle%22 font-size=%2224%22 font-weight=%22900%22 fill=%22white%22%3EMI%3C/text%3E%3C/svg%3E"></div><div><div class="schoolTitle" id="schoolTitle">MI LIWAUL ISLAM</div><div class="schoolSub" id="schoolSub">Belajar • Bermain • Berprestasi • Berakhlak Mulia</div></div></div></header><main>
+<section id="login" class="card"><h2>🔐 Login</h2><p class="muted">Pilih jenis pengguna untuk masuk.</p><div class="rolebox"><button onclick="pilihLogin('siswa')">👨‍🎓 Siswa</button><button onclick="pilihLogin('guru')">👨‍🏫 Guru</button><button onclick="pilihLogin('admin')">🛡️ Admin</button></div><div id="loginForm" class="hidden" style="margin-top:15px"><label>Username</label><input id="username"><br><br><label>Password</label><div class="passwordWrap"><input id="password" type="password"><button type="button" class="passwordToggle" onclick="togglePasswordVisibility('password',this)" aria-label="Tampilkan password" title="Tampilkan password">👁️</button></div><div id="loginError" class="loginError" role="alert" aria-live="assertive"></div><br><button id="btnLogin" type="button" onclick="prosesLogin()">Masuk</button></div></section>
+<section id="home" class="card hidden"><div class="welcomeBanner"><h2>🌈 Selamat Datang di Kelas Pintar!</h2><p id="welcome" class="muted"></p><div class="funline">Ayo belajar dengan ceria! 🚀⭐📚</div><div class="featureGrid"><div class="feature"><b>🧠</b>Asah Otak</div><div class="feature"><b>🏆</b>Raih Prestasi</div><div class="feature"><b>🌟</b>Jadi Hebat</div></div></div><div id="peringkatBanner" class="rankingBanner" aria-live="polite"><div class="rankingTitle">🏆 TIGA PERINGKAT TERBAIK SISWA</div><div class="rankingMarquee"><div id="peringkatBerjalan" class="rankingTrack">🔄 Memuat peringkat siswa...</div></div></div><h2>Data Siswa</h2><div class="grid"><div><label>Nama Siswa</label><input id="nama"></div><div><label>Kelas</label><input id="kelas" placeholder="Contoh: 2A"></div><div><label>Alamat</label><textarea id="alamat"></textarea></div><div><label>Semester</label><select id="semester"><option value="1">Semester 1</option><option value="2">Semester 2</option></select></div><div><label>Mata Pelajaran</label><select id="mapel"></select></div></div><br><button id="btnMulaiKuis" onclick="mulai()">🚀 MULAI KUIS</button><div id="staffMenu" class="hidden"><hr><button id="btnKelolaSoal" class="gray" onclick="bukaKelola()">📝 Tambah / Kelola Soal</button><button id="btnHasilSiswa" class="gray" onclick="bukaHasilGuru()">📊 Lihat Hasil Siswa</button><button id="adminAccountBtn" class="gray hidden" onclick="bukaAkunAdmin()">🔐 Manajemen Akun & Password</button><button id="adminSettingsBtn" class="gray hidden" onclick="bukaPengaturanAdmin()">⚙️ Pengaturan Hak Akses & Tampilan</button></div><div id="studentMenu" class="hidden"><hr><button id="btnNilaiSaya" class="gray" onclick="bukaHasilSaya()">📊 Lihat Nilai Saya</button></div><br><button class="danger" onclick="logout()">Keluar / Logout</button></section>
+<section id="quiz" class="card hidden"><div><b id="info"></b><span style="float:right" id="count"></span></div><br><div class="bar"><div id="prog"></div></div>
+<div id="box"></div><div class="nums" id="nums"></div><div style="display:flex;gap:8px"><button class="gray" onclick="prev()">← Sebelumnya</button><button onclick="next()">Berikutnya →</button></div><br><div style="display:flex;gap:8px;flex-wrap:wrap"><button onclick="selesai()">✅ KUMPULKAN</button><button class="danger" onclick="batalkanKuis()">❌ BATALKAN KUIS</button></div></section>
+<section id="kelola" class="card hidden">
+<h2>📝 Kelola Bank Soal</h2>
+<p>Tambah, edit, dan nonaktifkan soal langsung dari aplikasi. Jika Firebase aktif dan Rules mengizinkan penulisan, soal otomatis tersimpan di Firebase.</p>
+<div class="grid">
+<div><label>Semester</label><select id="addSemester"><option value="1">Semester 1</option><option value="2">Semester 2</option></select></div>
+<div><label>Mata Pelajaran</label><select id="addMapel"></select></div>
+</div><br>
+<input type="hidden" id="editSoalId" value=""><label>Pertanyaan</label><textarea id="addQ" rows="3" placeholder="Tulis pertanyaan..."></textarea><br><br>
+<div class="grid">
+<div><label>A</label><input id="addA"></div><div><label>B</label><input id="addB"></div>
+<div><label>C</label><input id="addC"></div><div><label>D</label><input id="addD"></div>
+</div><br>
+<label>Kunci Jawaban</label><select id="addKey"><option>A</option><option>B</option><option>C</option><option>D</option></select><br><br>
+<div class="row"><button onclick="simpanSoal()" id="btnSimpanSoal">💾 Simpan Soal</button><button class="gray" onclick="toggleBulkSoal()" id="btnBulkSoal">📚 Tambah Banyak Soal</button><button class="gray hidden" onclick="batalEditSoal()" id="btnBatalEdit">✖ Batal Edit</button><button class="gray" id="btnLihatBank" onclick="toggleBankSoal()">📚 Lihat Bank Soal</button><button class="gray" id="btnRekapBank" onclick="toggleRekapBank()">📊 Rekap Jumlah Bank Soal</button><button class="gray" id="btnKelolaMapel" onclick="toggleKelolaMapel()">⚙️ Kelola Mata Pelajaran</button><button class="gray" onclick="kembaliHome()">← Kembali</button></div>
+<div id="bulkSoalPanel" class="tip hidden" style="margin-top:12px;text-align:left"><b>➕ Tambah Banyak Soal ke Firebase</b><p style="font-weight:normal;margin:8px 0">Masukkan <b>1 soal per baris</b> dengan format:</p><div style="background:#fff;padding:10px;border-radius:10px;border:1px solid #bae6fd;font-family:monospace;font-size:13px">Pertanyaan || Jawaban A || Jawaban B || Jawaban C || Jawaban D || Kunci</div><p style="font-weight:normal;margin:8px 0">Contoh:</p><div style="background:#fff;padding:10px;border-radius:10px;border:1px solid #bae6fd;font-family:monospace;font-size:13px;white-space:pre-wrap">2 + 3 = ... || 4 || 5 || 6 || 7 || B
+7 - 2 = ... || 4 || 5 || 6 || 7 || A</div><p style="font-weight:normal;margin:8px 0">19 soal Matematika Semester 1 sudah saya siapkan di bawah ini. Jika soal pertama yang sudah ada di Firebase tetap aktif, setelah disimpan jumlahnya menjadi 20 soal. Soal yang sama akan ditolak agar tidak dobel.</p><textarea id="bulkSoalText" rows="14" placeholder="Soal yang disiapkan..." style="background:#fff">Hasil dari 8 + 7 adalah ... || 15 || 14 || 16 || 17 || A
+Hasil dari 14 - 6 adalah ... || 7 || 9 || 8 || 10 || C
+Pada bilangan 47, angka 4 menempati nilai tempat ... || satuan || puluhan || ratusan || ribuan || B
+Pada bilangan 62, angka 2 memiliki nilai tempat ... || puluhan || ratusan || satuan || ribuan || C
+Bilangan yang lebih besar dari 35 adalah ... || 25 || 53 || 30 || 33 || B
+Urutan bilangan 10, 20, 30, 40, ... Bilangan berikutnya adalah ... || 50 || 45 || 55 || 60 || A
+Ada 3 kelompok. Setiap kelompok berisi 2 pensil. Jumlah semua pensil adalah ... || 5 || 7 || 6 || 8 || C
+12 permen dibagikan sama rata kepada 3 anak. Setiap anak mendapat ... permen. || 4 || 3 || 5 || 6 || A
+Hasil dari 5 × 2 adalah ... || 7 || 8 || 12 || 10 || D
+Hasil dari 15 ÷ 3 adalah ... || 4 || 5 || 6 || 7 || B
+Rina memiliki uang Rp2.000. Ibu memberi Rp5.000 lagi. Jumlah uang Rina menjadi ... || Rp6.000 || Rp8.000 || Rp7.000 || Rp9.000 || C
+Pukul 07.00 dibaca ... || pukul tujuh siang || pukul tujuh sore || pukul tujuh malam || pukul tujuh pagi || D
+1 meter sama dengan ... sentimeter. || 100 || 10 || 50 || 1.000 || A
+Bangun datar yang memiliki 3 sisi disebut ... || persegi || lingkaran || segitiga || persegi panjang || C
+Bangun persegi memiliki jumlah sudut sebanyak ... || 4 || 2 || 3 || 5 || A
+Hasil dari 26 + 13 adalah ... || 37 || 39 || 38 || 40 || B
+Hasil dari 50 - 27 adalah ... || 22 || 24 || 23 || 21 || C
+Bilangan genap berikut adalah ... || 18 || 13 || 15 || 21 || A
+Doni memiliki 20 kelereng. Ia memberikan 7 kelereng kepada temannya. Sisa kelereng Doni adalah ... || 11 || 13 || 12 || 14 || B</textarea><div class="row" style="margin-top:8px"><button onclick="simpanBanyakSoal()" id="btnSimpanBanyak">☁️ Simpan Semua ke Firebase</button><button class="gray" onclick="clearBulkSoal()">🧹 Bersihkan</button></div><div id="bulkProgress" style="margin-top:10px;font-weight:bold;white-space:pre-wrap"></div></div>
+<div id="bankPanel" class="hidden"><div id="bankInfo" class="muted" style="margin-top:12px"></div><div class="tip" style="margin-top:10px;background:#fff7ed;border-color:#fdba74;color:#9a3412"><b>🧹 Reset Soal Mata Pelajaran</b><div style="font-weight:normal;margin:6px 0 9px">Menghapus/nonaktifkan semua soal aktif dari mata pelajaran yang sedang dipilih, mencakup <b>Semester 1 dan Semester 2</b>. Mata pelajaran lain tidak ikut berubah.</div><button class="danger" id="btnResetSoalMapel" onclick="resetSoalMapel()">🗑️ Reset Semua Soal Mapel Ini</button></div><div id="bankList"></div><div id="rekapBankPanel" class="tip hidden" style="margin-top:14px;text-align:left"><b>📊 Rekap Jumlah Bank Soal Semua Mata Pelajaran</b><div id="rekapBankList" style="margin-top:8px"></div><div id="rekapBankStatus" class="muted" style="margin-top:8px"></div></div><div id="kelolaMapelPanel" class="tip hidden" style="margin-top:14px;text-align:left"><b>⚙️ Kelola Mata Pelajaran</b><p style="font-weight:normal;margin:8px 0">Nama mata pelajaran tersimpan di Firebase sehingga perubahan berlaku di semua HP/komputer.</p><div class="grid"><div><label>Pilih Mapel</label><select id="manageMapelSelect"></select></div><div><label>Nama Mapel</label><input id="manageMapelName" placeholder="Nama mata pelajaran baru"></div></div><br><div class="row"><button onclick="tambahMapelFirebase()">➕ Tambah Mapel</button><button onclick="ubahMapelFirebase()">✏️ Ubah Nama</button><button class="danger" onclick="hapusMapelFirebase()">🗑️ Hapus Mapel</button></div><p id="mapelManageInfo" class="muted"></p></div></div>
+</section>
+<section id="akunAdmin" class="card adminBox hidden"><h2>🛡️ Manajemen Akun & Password</h2><p class="muted">Admin adalah pengelola tertinggi. Admin dapat mengganti password akun Admin, Guru, maupun Siswa pada perangkat uji coba ini.</p><div class="tip">🔒 Pada tahap Firebase nanti, pengaturan ini akan dipindahkan ke Firebase Authentication agar benar-benar tersimpan online.</div><div class="grid"><div><label>Pilih Akun</label><select id="akunTarget"><option value="admin">🛡️ Admin</option><option value="guru">👨‍🏫 Guru</option><option value="siswa">👨‍🎓 Siswa</option></select></div><div><label>Username</label><input id="akunUsername" readonly></div><div><label>Password Baru</label><input id="akunPasswordBaru" type="password" placeholder="Minimal 6 karakter"></div><div><label>Ulangi Password Baru</label><input id="akunPasswordUlang" type="password" placeholder="Ketik ulang password"></div></div><br><div class="row"><button onclick="ubahPassword()">💾 Simpan Password</button><button class="gray" onclick="kembaliHome()">← Kembali</button></div><p id="akunInfo" class="muted"></p></section><section id="pengaturanAdmin" class="card adminBox hidden">
+<h2>⚙️ Pengaturan Hak Akses & Tampilan</h2>
+<p class="muted">Semua pengaturan di bawah disimpan di Firebase dan diterapkan ke perangkat lain saat aplikasi dibuka/aktif.</p>
+<h3>🔐 Hak Akses</h3>
+<div class="grid">
+<div><label>Guru — Kelola Soal</label><select id="accessGuruKelola"><option value="true">Diizinkan</option><option value="false">Tidak diizinkan</option></select></div>
+<div><label>Guru — Lihat Nilai Siswa</label><select id="accessGuruHasil"><option value="true">Diizinkan</option><option value="false">Tidak diizinkan</option></select></div><div><label>Guru — Lihat Rekap Bank Soal</label><select id="accessGuruRekap"><option value="true">Diizinkan</option><option value="false">Tidak diizinkan</option></select></div><div><label>Guru — Kelola Mata Pelajaran</label><select id="accessGuruMapel"><option value="true">Diizinkan</option><option value="false">Tidak diizinkan</option></select></div>
+<div><label>Siswa — Mengerjakan Kuis</label><select id="accessSiswaKuis"><option value="true">Diizinkan</option><option value="false">Tidak diizinkan</option></select></div>
+<div><label>Siswa — Lihat Nilai Sendiri</label><select id="accessSiswaHasil"><option value="true">Diizinkan</option><option value="false">Tidak diizinkan</option></select></div>
+</div>
+
+<h3>🎨 Pengaturan Tampilan Sekolah</h3>
+<div class="grid">
+<div><label>Nama MI / Sekolah</label><input id="settingSchoolName" placeholder="MI Liwaul Islam"></div>
+<div><label>Tulisan di bawah nama</label><input id="settingSchoolSub" placeholder="Belajar • Bermain • Berprestasi • Berakhlak Mulia"></div>
+<div style="grid-column:1/-1"><label>Logo MI / Sekolah</label><input id="settingLogoFile" type="file" accept="image/*"><small class="muted">Pilih gambar logo. Logo akan diunggah ke Cloudinary dan alamat gambarnya disimpan di Firebase.</small></div>
+</div>
+<h3>✨ Pengaturan Animasi & Dekorasi</h3>
+<p class="muted">Admin dapat mengganti dekorasi bergerak tanpa mengubah fungsi kuis. Gambar yang dipilih disimpan di Firebase agar perangkat lain mengikuti pengaturan ini.</p>
+<div class="decorSettingsGrid">
+<div><label>Animasi Dekorasi</label><select id="decorEnabled"><option value="true">Aktif</option><option value="false">Nonaktif</option></select></div>
+<div><label>Kecepatan Gerakan</label><select id="decorSpeed"><option value="slow">Lambat</option><option value="normal">Normal</option><option value="fast">Cepat</option></select></div><div><label>Jenis Gerakan</label><select id="decorMotion"><option value="float">Melayang ringan</option><option value="crawl">Merayap di layar</option><option value="bounce">Memantul ringan</option><option value="drift">Bergeser lembut</option></select></div>
+<div><label>Gambar Dekorasi 1</label><input id="decorFile1" type="file" accept="image/*"></div><small class="muted" style="grid-column:1/-1">Gambar akan otomatis diperkecil (maks. 800 px dan sekitar 140 KB) sebelum disimpan, sehingga tidak perlu mengecilkan manual.</small>
+<div><label>Gambar Dekorasi 2</label><input id="decorFile2" type="file" accept="image/*"></div>
+<div><label>Gambar Dekorasi 3</label><input id="decorFile3" type="file" accept="image/*"></div>
+<div><label>Gambar Dekorasi 4</label><input id="decorFile4" type="file" accept="image/*"></div>
+</div>
+<div id="decorPreview" class="decorPreview" style="margin-top:12px"><span class="muted">Pratinjau dekorasi akan tampil di sini.</span></div>
+<div class="row" style="margin-top:10px"><button class="gray" onclick="hapusDekorasi()">🗑️ Hapus Semua Dekorasi</button><button class="gray" onclick="resetDekorasiDefault()">↩️ Dekorasi Bawaan</button></div>
+<p id="decorInfo" class="muted"></p>
+<div class="row"><button onclick="simpanPengaturanAdmin()">💾 Simpan Semua Pengaturan ke Firebase</button><button class="gray" onclick="resetTampilanDefault()">↩️ Kembalikan Tampilan Default</button></div>
+<p id="settingsInfo" class="muted"></p>
+<button class="gray" onclick="kembaliHome()">← Kembali</button>
+</section>
+<section id="hasilGuru" class="card hidden"><h2>📊 Hasil Kuis Siswa</h2><div id="hasilList"></div><button id="btnResetHasilSiswa" class="danger" style="margin-top:14px" onclick="resetHasilSiswa()">🗑️ Reset Semua Laporan Hasil</button><button class="gray" onclick="kembaliHome()">← Kembali</button></section><section id="hasilSaya" class="card hidden"><h2>📊 Nilai Saya</h2><div id="hasilSayaList"></div><button class="gray" onclick="kembaliHome()">← Kembali</button></section><section id="hasil" class="card hidden"><h2 style="text-align:center">Hasil Kuis</h2><div class="score" id="nilai"></div><p id="detail" style="text-align:center"></p><div id="hasilSaveStatus" class="tip" style="display:none;text-align:center"></div><button onclick="location.reload()">Kuis Lagi</button></section>
+<div class="footerFun">🌟 Semangat belajar, anak-anak hebat MI Liwaul Islam! 🌟</div></main>
+<script>
+const BUILTIN_BANK=[{"id": "MTK2-S1-001", "q": "Bilangan 10 terdiri dari ... puluhan dan ... satuan.", "o": ["0 puluhan dan 1 satuan", "1 puluhan dan 0 satuan", "0 puluhan dan 1 satuan", "2 puluhan dan 0 satuan"], "a": "B"}, {"id": "MTK2-S1-002", "q": "Bilangan 12 terdiri dari ... puluhan dan ... satuan.", "o": ["1 puluhan dan 2 satuan", "2 puluhan dan 1 satuan", "0 puluhan dan 3 satuan", "2 puluhan dan 1 satuan"], "a": "A"}, {"id": "MTK2-S1-003", "q": "Bilangan 14 terdiri dari ... puluhan dan ... satuan.", "o": ["1 puluhan dan 4 satuan", "2 puluhan dan 3 satuan", "4 puluhan dan 1 satuan", "0 puluhan dan 5 satuan"], "a": "A"}, {"id": "MTK2-S1-004", "q": "Bilangan 16 terdiri dari ... puluhan dan ... satuan.", "o": ["0 puluhan dan 7 satuan", "1 puluhan dan 6 satuan", "6 puluhan dan 1 satuan", "2 puluhan dan 5 satuan"], "a": "B"}, {"id": "MTK2-S1-005", "q": "Bilangan 18 terdiri dari ... puluhan dan ... satuan.", "o": ["0 puluhan dan 9 satuan", "1 puluhan dan 8 satuan", "2 puluhan dan 7 satuan", "8 puluhan dan 1 satuan"], "a": "B"}, {"id": "MTK2-S1-006", "q": "Bilangan 20 terdiri dari ... puluhan dan ... satuan.", "o": ["2 puluhan dan 0 satuan", "3 puluhan dan 0 satuan", "1 puluhan dan 1 satuan", "0 puluhan dan 2 satuan"], "a": "A"}, {"id": "MTK2-S1-007", "q": "Bilangan 22 terdiri dari ... puluhan dan ... satuan.", "o": ["1 puluhan dan 3 satuan", "3 puluhan dan 1 satuan", "2 puluhan dan 2 satuan", "2 puluhan dan 2 satuan"], "a": "C"}, {"id": "MTK2-S1-008", "q": "Bilangan 24 terdiri dari ... puluhan dan ... satuan.", "o": ["1 puluhan dan 5 satuan", "4 puluhan dan 2 satuan", "2 puluhan dan 4 satuan", "3 puluhan dan 3 satuan"], "a": "C"}, {"id": "MTK2-S1-009", "q": "Bilangan 26 terdiri dari ... puluhan dan ... satuan.", "o": ["6 puluhan dan 2 satuan", "1 puluhan dan 7 satuan", "2 puluhan dan 6 satuan", "3 puluhan dan 5 satuan"], "a": "C"}, {"id": "MTK2-S1-010", "q": "Bilangan 28 terdiri dari ... puluhan dan ... satuan.", "o": ["2 puluhan dan 8 satuan", "3 puluhan dan 7 satuan", "8 puluhan dan 2 satuan", "1 puluhan dan 9 satuan"], "a": "A"}, {"id": "MTK2-S1-011", "q": "Bilangan 30 terdiri dari ... puluhan dan ... satuan.", "o": ["2 puluhan dan 1 satuan", "0 puluhan dan 3 satuan", "3 puluhan dan 0 satuan", "4 puluhan dan 0 satuan"], "a": "C"}, {"id": "MTK2-S1-012", "q": "Bilangan 32 terdiri dari ... puluhan dan ... satuan.", "o": ["2 puluhan dan 3 satuan", "4 puluhan dan 1 satuan", "2 puluhan dan 3 satuan", "3 puluhan dan 2 satuan"], "a": "D"}, {"id": "MTK2-S1-013", "q": "Bilangan 34 terdiri dari ... puluhan dan ... satuan.", "o": ["3 puluhan dan 4 satuan", "2 puluhan dan 5 satuan", "4 puluhan dan 3 satuan", "4 puluhan dan 3 satuan"], "a": "A"}, {"id": "MTK2-S1-014", "q": "Bilangan 36 terdiri dari ... puluhan dan ... satuan.", "o": ["2 puluhan dan 7 satuan", "3 puluhan dan 6 satuan", "4 puluhan dan 5 satuan", "6 puluhan dan 3 satuan"], "a": "B"}, {"id": "MTK2-S1-015", "q": "Bilangan 38 terdiri dari ... puluhan dan ... satuan.", "o": ["8 puluhan dan 3 satuan", "3 puluhan dan 8 satuan", "2 puluhan dan 9 satuan", "4 puluhan dan 7 satuan"], "a": "B"}, {"id": "MTK2-S1-016", "q": "Manakah bilangan yang lebih besar antara 20 dan 27?", "o": ["27", "28", "19", "20"], "a": "A"}, {"id": "MTK2-S1-017", "q": "Manakah bilangan yang lebih besar antara 21 dan 28?", "o": ["20", "29", "28", "21"], "a": "C"}, {"id": "MTK2-S1-018", "q": "Manakah bilangan yang lebih besar antara 22 dan 29?", "o": ["30", "29", "21", "22"], "a": "B"}, {"id": "MTK2-S1-019", "q": "Manakah bilangan yang lebih besar antara 23 dan 30?", "o": ["30", "31", "22", "23"], "a": "A"}, {"id": "MTK2-S1-020", "q": "Manakah bilangan yang lebih besar antara 24 dan 31?", "o": ["31", "24", "23", "32"], "a": "A"}, {"id": "MTK2-S1-021", "q": "Manakah bilangan yang lebih besar antara 25 dan 32?", "o": ["33", "25", "24", "32"], "a": "D"}, {"id": "MTK2-S1-022", "q": "Manakah bilangan yang lebih besar antara 26 dan 33?", "o": ["26", "34", "33", "25"], "a": "C"}, {"id": "MTK2-S1-023", "q": "Manakah bilangan yang lebih besar antara 27 dan 34?", "o": ["27", "34", "35", "26"], "a": "B"}, {"id": "MTK2-S1-024", "q": "Manakah bilangan yang lebih besar antara 28 dan 35?", "o": ["36", "27", "28", "35"], "a": "D"}, {"id": "MTK2-S1-025", "q": "Manakah bilangan yang lebih besar antara 29 dan 36?", "o": ["29", "36", "37", "28"], "a": "B"}, {"id": "MTK2-S1-026", "q": "Manakah bilangan yang lebih besar antara 30 dan 37?", "o": ["29", "38", "37", "30"], "a": "C"}, {"id": "MTK2-S1-027", "q": "Manakah bilangan yang lebih besar antara 31 dan 38?", "o": ["38", "39", "31", "30"], "a": "A"}, {"id": "MTK2-S1-028", "q": "Manakah bilangan yang lebih besar antara 32 dan 39?", "o": ["39", "31", "32", "40"], "a": "A"}, {"id": "MTK2-S1-029", "q": "Manakah bilangan yang lebih besar antara 33 dan 40?", "o": ["33", "41", "40", "32"], "a": "C"}, {"id": "MTK2-S1-030", "q": "Manakah bilangan yang lebih besar antara 34 dan 41?", "o": ["41", "34", "42", "33"], "a": "A"}, {"id": "MTK2-S1-031", "q": "Manakah bilangan yang lebih besar antara 35 dan 42?", "o": ["43", "42", "34", "35"], "a": "B"}, {"id": "MTK2-S1-032", "q": "Manakah bilangan yang lebih besar antara 36 dan 43?", "o": ["36", "35", "44", "43"], "a": "D"}, {"id": "MTK2-S1-033", "q": "Manakah bilangan yang lebih besar antara 37 dan 44?", "o": ["44", "37", "45", "36"], "a": "A"}, {"id": "MTK2-S1-034", "q": "Manakah bilangan yang lebih besar antara 38 dan 45?", "o": ["38", "46", "37", "45"], "a": "D"}, {"id": "MTK2-S1-035", "q": "Manakah bilangan yang lebih besar antara 39 dan 46?", "o": ["46", "39", "38", "47"], "a": "A"}, {"id": "MTK2-S1-036", "q": "Rani memiliki 12 kelereng. Ia mendapat lagi 7 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["21", "17", "19", "24"], "a": "C"}, {"id": "MTK2-S1-037", "q": "Rani memiliki 13 kelereng. Ia mendapat lagi 8 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["26", "21", "23", "19"], "a": "B"}, {"id": "MTK2-S1-038", "q": "Rani memiliki 14 kelereng. Ia mendapat lagi 9 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["21", "25", "28", "23"], "a": "D"}, {"id": "MTK2-S1-039", "q": "Rani memiliki 15 kelereng. Ia mendapat lagi 10 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["23", "30", "25", "27"], "a": "C"}, {"id": "MTK2-S1-040", "q": "Rani memiliki 16 kelereng. Ia mendapat lagi 11 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["27", "32", "25", "29"], "a": "A"}, {"id": "MTK2-S1-041", "q": "Rani memiliki 17 kelereng. Ia mendapat lagi 12 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["29", "27", "34", "31"], "a": "A"}, {"id": "MTK2-S1-042", "q": "Rani memiliki 18 kelereng. Ia mendapat lagi 13 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["33", "36", "31", "29"], "a": "C"}, {"id": "MTK2-S1-043", "q": "Rani memiliki 19 kelereng. Ia mendapat lagi 14 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["31", "38", "33", "35"], "a": "C"}, {"id": "MTK2-S1-044", "q": "Rani memiliki 20 kelereng. Ia mendapat lagi 15 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["40", "37", "35", "33"], "a": "C"}, {"id": "MTK2-S1-045", "q": "Rani memiliki 21 kelereng. Ia mendapat lagi 7 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["26", "28", "33", "30"], "a": "B"}, {"id": "MTK2-S1-046", "q": "Rani memiliki 22 kelereng. Ia mendapat lagi 8 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["30", "35", "32", "28"], "a": "A"}, {"id": "MTK2-S1-047", "q": "Rani memiliki 23 kelereng. Ia mendapat lagi 9 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["37", "32", "34", "30"], "a": "B"}, {"id": "MTK2-S1-048", "q": "Rani memiliki 24 kelereng. Ia mendapat lagi 10 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["39", "34", "36", "32"], "a": "B"}, {"id": "MTK2-S1-049", "q": "Rani memiliki 25 kelereng. Ia mendapat lagi 11 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["36", "34", "38", "41"], "a": "A"}, {"id": "MTK2-S1-050", "q": "Rani memiliki 26 kelereng. Ia mendapat lagi 12 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["38", "40", "36", "43"], "a": "A"}, {"id": "MTK2-S1-051", "q": "Rani memiliki 27 kelereng. Ia mendapat lagi 13 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["38", "45", "40", "42"], "a": "C"}, {"id": "MTK2-S1-052", "q": "Rani memiliki 28 kelereng. Ia mendapat lagi 14 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["47", "40", "42", "44"], "a": "C"}, {"id": "MTK2-S1-053", "q": "Rani memiliki 29 kelereng. Ia mendapat lagi 15 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["44", "42", "46", "49"], "a": "A"}, {"id": "MTK2-S1-054", "q": "Rani memiliki 30 kelereng. Ia mendapat lagi 7 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["35", "39", "37", "42"], "a": "C"}, {"id": "MTK2-S1-055", "q": "Rani memiliki 31 kelereng. Ia mendapat lagi 8 kelereng. Jumlah kelereng Rani sekarang ...", "o": ["39", "37", "41", "44"], "a": "A"}, {"id": "MTK2-S1-056", "q": "Di rak ada 30 buku. Sebanyak 6 buku dipinjam. Buku yang masih ada ...", "o": ["25", "22", "24", "27"], "a": "C"}, {"id": "MTK2-S1-057", "q": "Di rak ada 31 buku. Sebanyak 7 buku dipinjam. Buku yang masih ada ...", "o": ["24", "22", "27", "25"], "a": "A"}, {"id": "MTK2-S1-058", "q": "Di rak ada 32 buku. Sebanyak 8 buku dipinjam. Buku yang masih ada ...", "o": ["27", "24", "22", "25"], "a": "B"}, {"id": "MTK2-S1-059", "q": "Di rak ada 33 buku. Sebanyak 9 buku dipinjam. Buku yang masih ada ...", "o": ["22", "24", "27", "25"], "a": "B"}, {"id": "MTK2-S1-060", "q": "Di rak ada 34 buku. Sebanyak 10 buku dipinjam. Buku yang masih ada ...", "o": ["25", "27", "24", "22"], "a": "C"}, {"id": "MTK2-S1-061", "q": "Di rak ada 35 buku. Sebanyak 11 buku dipinjam. Buku yang masih ada ...", "o": ["27", "22", "24", "25"], "a": "C"}, {"id": "MTK2-S1-062", "q": "Di rak ada 36 buku. Sebanyak 12 buku dipinjam. Buku yang masih ada ...", "o": ["24", "25", "27", "22"], "a": "A"}, {"id": "MTK2-S1-063", "q": "Di rak ada 37 buku. Sebanyak 13 buku dipinjam. Buku yang masih ada ...", "o": ["22", "25", "27", "24"], "a": "D"}, {"id": "MTK2-S1-064", "q": "Di rak ada 38 buku. Sebanyak 6 buku dipinjam. Buku yang masih ada ...", "o": ["35", "32", "30", "33"], "a": "B"}, {"id": "MTK2-S1-065", "q": "Di rak ada 39 buku. Sebanyak 7 buku dipinjam. Buku yang masih ada ...", "o": ["32", "33", "30", "35"], "a": "A"}, {"id": "MTK2-S1-066", "q": "Di rak ada 40 buku. Sebanyak 8 buku dipinjam. Buku yang masih ada ...", "o": ["30", "32", "33", "35"], "a": "B"}, {"id": "MTK2-S1-067", "q": "Di rak ada 41 buku. Sebanyak 9 buku dipinjam. Buku yang masih ada ...", "o": ["30", "35", "33", "32"], "a": "D"}, {"id": "MTK2-S1-068", "q": "Di rak ada 42 buku. Sebanyak 10 buku dipinjam. Buku yang masih ada ...", "o": ["30", "32", "33", "35"], "a": "B"}, {"id": "MTK2-S1-069", "q": "Di rak ada 43 buku. Sebanyak 11 buku dipinjam. Buku yang masih ada ...", "o": ["30", "32", "35", "33"], "a": "B"}, {"id": "MTK2-S1-070", "q": "Di rak ada 44 buku. Sebanyak 12 buku dipinjam. Buku yang masih ada ...", "o": ["32", "35", "30", "33"], "a": "A"}, {"id": "MTK2-S1-071", "q": "Di rak ada 45 buku. Sebanyak 13 buku dipinjam. Buku yang masih ada ...", "o": ["30", "32", "35", "33"], "a": "B"}, {"id": "MTK2-S1-072", "q": "Di rak ada 46 buku. Sebanyak 6 buku dipinjam. Buku yang masih ada ...", "o": ["38", "43", "40", "41"], "a": "C"}, {"id": "MTK2-S1-073", "q": "Di rak ada 47 buku. Sebanyak 7 buku dipinjam. Buku yang masih ada ...", "o": ["41", "38", "43", "40"], "a": "D"}, {"id": "MTK2-S1-074", "q": "Di rak ada 48 buku. Sebanyak 8 buku dipinjam. Buku yang masih ada ...", "o": ["38", "40", "41", "43"], "a": "B"}, {"id": "MTK2-S1-075", "q": "Di rak ada 49 buku. Sebanyak 9 buku dipinjam. Buku yang masih ada ...", "o": ["43", "41", "38", "40"], "a": "D"}, {"id": "MTK2-S1-076", "q": "Ada 2 piring. Setiap piring berisi 2 kue. Jumlah semua kue ...", "o": ["6", "4", "8", "3"], "a": "B"}, {"id": "MTK2-S1-077", "q": "Ada 3 piring. Setiap piring berisi 3 kue. Jumlah semua kue ...", "o": ["11", "13", "8", "9"], "a": "D"}, {"id": "MTK2-S1-078", "q": "Ada 4 piring. Setiap piring berisi 4 kue. Jumlah semua kue ...", "o": ["15", "16", "20", "18"], "a": "B"}, {"id": "MTK2-S1-079", "q": "Ada 5 piring. Setiap piring berisi 5 kue. Jumlah semua kue ...", "o": ["25", "27", "24", "29"], "a": "A"}, {"id": "MTK2-S1-080", "q": "Ada 6 piring. Setiap piring berisi 6 kue. Jumlah semua kue ...", "o": ["36", "40", "38", "35"], "a": "A"}, {"id": "MTK2-S1-081", "q": "Ada 2 piring. Setiap piring berisi 7 kue. Jumlah semua kue ...", "o": ["18", "16", "14", "13"], "a": "C"}, {"id": "MTK2-S1-082", "q": "Ada 3 piring. Setiap piring berisi 2 kue. Jumlah semua kue ...", "o": ["10", "6", "5", "8"], "a": "B"}, {"id": "MTK2-S1-083", "q": "Ada 4 piring. Setiap piring berisi 3 kue. Jumlah semua kue ...", "o": ["16", "14", "12", "11"], "a": "C"}, {"id": "MTK2-S1-084", "q": "Ada 5 piring. Setiap piring berisi 4 kue. Jumlah semua kue ...", "o": ["24", "19", "20", "22"], "a": "C"}, {"id": "MTK2-S1-085", "q": "Ada 6 piring. Setiap piring berisi 5 kue. Jumlah semua kue ...", "o": ["29", "34", "30", "32"], "a": "C"}, {"id": "MTK2-S1-086", "q": "4 pensil dibagikan sama rata kepada 2 anak. Setiap anak mendapat ... pensil.", "o": ["2", "4", "3", "1"], "a": "A"}, {"id": "MTK2-S1-087", "q": "9 pensil dibagikan sama rata kepada 3 anak. Setiap anak mendapat ... pensil.", "o": ["5", "4", "2", "3"], "a": "D"}, {"id": "MTK2-S1-088", "q": "16 pensil dibagikan sama rata kepada 4 anak. Setiap anak mendapat ... pensil.", "o": ["3", "5", "6", "4"], "a": "D"}, {"id": "MTK2-S1-089", "q": "25 pensil dibagikan sama rata kepada 5 anak. Setiap anak mendapat ... pensil.", "o": ["4", "5", "6", "7"], "a": "B"}, {"id": "MTK2-S1-090", "q": "12 pensil dibagikan sama rata kepada 2 anak. Setiap anak mendapat ... pensil.", "o": ["5", "7", "6", "8"], "a": "C"}, {"id": "MTK2-S1-091", "q": "6 pensil dibagikan sama rata kepada 3 anak. Setiap anak mendapat ... pensil.", "o": ["1", "2", "3", "4"], "a": "B"}, {"id": "MTK2-S1-092", "q": "12 pensil dibagikan sama rata kepada 4 anak. Setiap anak mendapat ... pensil.", "o": ["4", "2", "5", "3"], "a": "D"}, {"id": "MTK2-S1-093", "q": "20 pensil dibagikan sama rata kepada 5 anak. Setiap anak mendapat ... pensil.", "o": ["4", "3", "5", "6"], "a": "A"}, {"id": "MTK2-S1-094", "q": "10 pensil dibagikan sama rata kepada 2 anak. Setiap anak mendapat ... pensil.", "o": ["4", "5", "7", "6"], "a": "B"}, {"id": "MTK2-S1-095", "q": "18 pensil dibagikan sama rata kepada 3 anak. Setiap anak mendapat ... pensil.", "o": ["6", "7", "5", "8"], "a": "A"}, {"id": "MTK2-S1-096", "q": "Hasil dari 2 × 3 adalah ...", "o": ["7", "6", "5", "8"], "a": "B"}, {"id": "MTK2-S1-097", "q": "Hasil dari 3 × 4 adalah ...", "o": ["12", "11", "13", "14"], "a": "A"}, {"id": "MTK2-S1-098", "q": "Hasil dari 4 × 5 adalah ...", "o": ["22", "19", "21", "20"], "a": "D"}, {"id": "MTK2-S1-099", "q": "Hasil dari 5 × 2 adalah ...", "o": ["10", "11", "12", "9"], "a": "A"}, {"id": "MTK2-S1-100", "q": "Hasil dari 6 × 3 adalah ...", "o": ["18", "20", "17", "19"], "a": "A"}, {"id": "MTK2-S1-101", "q": "Hasil dari 7 × 2 adalah ...", "o": ["13", "15", "14", "16"], "a": "C"}, {"id": "MTK2-S1-102", "q": "Hasil dari 8 × 4 adalah ...", "o": ["32", "34", "33", "31"], "a": "A"}, {"id": "MTK2-S1-103", "q": "Hasil dari 9 × 3 adalah ...", "o": ["29", "28", "27", "26"], "a": "C"}, {"id": "MTK2-S1-104", "q": "Hasil dari 4 × 6 adalah ...", "o": ["24", "26", "25", "23"], "a": "A"}, {"id": "MTK2-S1-105", "q": "Hasil dari 5 × 5 adalah ...", "o": ["25", "26", "27", "24"], "a": "A"}, {"id": "MTK2-S1-106", "q": "Dina membeli pensil seharga Rp2.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp2.000", "Rp27.000", "Rp28.000", "Rp29.000"], "a": "C"}, {"id": "MTK2-S1-107", "q": "Dina membeli pensil seharga Rp3.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp3.000", "Rp27.000", "Rp26.000", "Rp28.000"], "a": "B"}, {"id": "MTK2-S1-108", "q": "Dina membeli pensil seharga Rp4.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp26.000", "Rp27.000", "Rp4.000", "Rp25.000"], "a": "A"}, {"id": "MTK2-S1-109", "q": "Dina membeli pensil seharga Rp5.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp26.000", "Rp5.000", "Rp25.000", "Rp24.000"], "a": "C"}, {"id": "MTK2-S1-110", "q": "Dina membeli pensil seharga Rp6.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp25.000", "Rp23.000", "Rp6.000", "Rp24.000"], "a": "D"}, {"id": "MTK2-S1-111", "q": "Dina membeli pensil seharga Rp7.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp7.000", "Rp23.000", "Rp22.000", "Rp24.000"], "a": "B"}, {"id": "MTK2-S1-112", "q": "Dina membeli pensil seharga Rp8.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp22.000", "Rp21.000", "Rp23.000", "Rp8.000"], "a": "A"}, {"id": "MTK2-S1-113", "q": "Dina membeli pensil seharga Rp9.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp20.000", "Rp21.000", "Rp22.000", "Rp9.000"], "a": "B"}, {"id": "MTK2-S1-114", "q": "Dina membeli pensil seharga Rp10.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp10.000", "Rp21.000", "Rp19.000", "Rp20.000"], "a": "D"}, {"id": "MTK2-S1-115", "q": "Dina membeli pensil seharga Rp11.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp18.000", "Rp11.000", "Rp19.000", "Rp20.000"], "a": "C"}, {"id": "MTK2-S1-116", "q": "Dina membeli pensil seharga Rp12.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp17.000", "Rp19.000", "Rp12.000", "Rp18.000"], "a": "D"}, {"id": "MTK2-S1-117", "q": "Dina membeli pensil seharga Rp13.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp18.000", "Rp17.000", "Rp16.000", "Rp13.000"], "a": "B"}, {"id": "MTK2-S1-118", "q": "Dina membeli pensil seharga Rp14.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp16.000", "Rp17.000", "Rp14.000", "Rp15.000"], "a": "A"}, {"id": "MTK2-S1-119", "q": "Dina membeli pensil seharga Rp15.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp15.000", "Rp16.000", "Rp15.000", "Rp14.000"], "a": "A"}, {"id": "MTK2-S1-120", "q": "Dina membeli pensil seharga Rp16.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp16.000", "Rp15.000", "Rp13.000", "Rp14.000"], "a": "D"}, {"id": "MTK2-S1-121", "q": "Dina membeli pensil seharga Rp17.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp14.000", "Rp17.000", "Rp12.000", "Rp13.000"], "a": "D"}, {"id": "MTK2-S1-122", "q": "Dina membeli pensil seharga Rp18.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp11.000", "Rp13.000", "Rp18.000", "Rp12.000"], "a": "D"}, {"id": "MTK2-S1-123", "q": "Dina membeli pensil seharga Rp19.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp10.000", "Rp11.000", "Rp19.000", "Rp12.000"], "a": "B"}, {"id": "MTK2-S1-124", "q": "Dina membeli pensil seharga Rp20.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp20.000", "Rp9.000", "Rp11.000", "Rp10.000"], "a": "D"}, {"id": "MTK2-S1-125", "q": "Dina membeli pensil seharga Rp21.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp9.000", "Rp8.000", "Rp21.000", "Rp10.000"], "a": "A"}, {"id": "MTK2-S1-126", "q": "Dina membeli pensil seharga Rp22.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp22.000", "Rp7.000", "Rp9.000", "Rp8.000"], "a": "D"}, {"id": "MTK2-S1-127", "q": "Dina membeli pensil seharga Rp23.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp7.000", "Rp6.000", "Rp8.000", "Rp23.000"], "a": "A"}, {"id": "MTK2-S1-128", "q": "Dina membeli pensil seharga Rp24.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp6.000", "Rp7.000", "Rp24.000", "Rp5.000"], "a": "A"}, {"id": "MTK2-S1-129", "q": "Dina membeli pensil seharga Rp25.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp25.000", "Rp5.000", "Rp6.000", "Rp4.000"], "a": "B"}, {"id": "MTK2-S1-130", "q": "Dina membeli pensil seharga Rp26.000. Ia membayar dengan Rp30.000. Kembaliannya ...", "o": ["Rp5.000", "Rp26.000", "Rp3.000", "Rp4.000"], "a": "D"}, {"id": "MTK2-S1-131", "q": "Belajar dimulai pukul 07.00 dan selesai pukul 08.00. Lama belajar ... menit.", "o": ["90", "75", "60", "45"], "a": "C"}, {"id": "MTK2-S1-132", "q": "Belajar dimulai pukul 08.00 dan selesai pukul 09.00. Lama belajar ... menit.", "o": ["90", "45", "75", "60"], "a": "D"}, {"id": "MTK2-S1-133", "q": "Belajar dimulai pukul 09.00 dan selesai pukul 10.00. Lama belajar ... menit.", "o": ["45", "60", "90", "75"], "a": "B"}, {"id": "MTK2-S1-134", "q": "Belajar dimulai pukul 10.00 dan selesai pukul 11.00. Lama belajar ... menit.", "o": ["90", "45", "75", "60"], "a": "D"}, {"id": "MTK2-S1-135", "q": "Belajar dimulai pukul 06.30 dan selesai pukul 07.00. Lama belajar ... menit.", "o": ["15", "45", "60", "30"], "a": "D"}, {"id": "MTK2-S1-136", "q": "Belajar dimulai pukul 07.30 dan selesai pukul 08.00. Lama belajar ... menit.", "o": ["60", "30", "15", "45"], "a": "B"}, {"id": "MTK2-S1-137", "q": "Belajar dimulai pukul 08.30 dan selesai pukul 09.00. Lama belajar ... menit.", "o": ["15", "60", "45", "30"], "a": "D"}, {"id": "MTK2-S1-138", "q": "Belajar dimulai pukul 09.30 dan selesai pukul 10.00. Lama belajar ... menit.", "o": ["15", "60", "45", "30"], "a": "D"}, {"id": "MTK2-S1-139", "q": "Belajar dimulai pukul 10.00 dan selesai pukul 11.30. Lama belajar ... menit.", "o": ["105", "120", "90", "75"], "a": "C"}, {"id": "MTK2-S1-140", "q": "Belajar dimulai pukul 12.00 dan selesai pukul 13.30. Lama belajar ... menit.", "o": ["75", "90", "120", "105"], "a": "B"}, {"id": "MTK2-S1-141", "q": "Belajar dimulai pukul 13.00 dan selesai pukul 14.00. Lama belajar ... menit.", "o": ["45", "90", "60", "75"], "a": "C"}, {"id": "MTK2-S1-142", "q": "Belajar dimulai pukul 14.00 dan selesai pukul 15.30. Lama belajar ... menit.", "o": ["105", "120", "90", "75"], "a": "C"}, {"id": "MTK2-S1-143", "q": "Belajar dimulai pukul 15.30 dan selesai pukul 16.00. Lama belajar ... menit.", "o": ["15", "30", "60", "45"], "a": "B"}, {"id": "MTK2-S1-144", "q": "Belajar dimulai pukul 16.00 dan selesai pukul 17.00. Lama belajar ... menit.", "o": ["75", "45", "90", "60"], "a": "D"}, {"id": "MTK2-S1-145", "q": "Belajar dimulai pukul 17.00 dan selesai pukul 18.30. Lama belajar ... menit.", "o": ["120", "105", "90", "75"], "a": "C"}, {"id": "MTK2-S1-146", "q": "Belajar dimulai pukul 18.30 dan selesai pukul 19.00. Lama belajar ... menit.", "o": ["15", "60", "45", "30"], "a": "D"}, {"id": "MTK2-S1-147", "q": "Belajar dimulai pukul 19.00 dan selesai pukul 20.00. Lama belajar ... menit.", "o": ["45", "90", "60", "75"], "a": "C"}, {"id": "MTK2-S1-148", "q": "Belajar dimulai pukul 20.00 dan selesai pukul 21.30. Lama belajar ... menit.", "o": ["90", "120", "105", "75"], "a": "A"}, {"id": "MTK2-S1-149", "q": "Belajar dimulai pukul 05.30 dan selesai pukul 06.00. Lama belajar ... menit.", "o": ["15", "45", "30", "60"], "a": "C"}, {"id": "MTK2-S1-150", "q": "Belajar dimulai pukul 06.00 dan selesai pukul 07.30. Lama belajar ... menit.", "o": ["105", "120", "75", "90"], "a": "D"}, {"id": "MTK2-S1-151", "q": "Panjang pita adalah 20 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["2.0 m", "0.40 m", "0.020 m", "0.20 m"], "a": "D"}, {"id": "MTK2-S1-152", "q": "Panjang pita adalah 25 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["2.5 m", "0.25 m", "0.025 m", "0.50 m"], "a": "B"}, {"id": "MTK2-S1-153", "q": "Panjang pita adalah 30 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.30 m", "3.0 m", "0.030 m", "0.60 m"], "a": "A"}, {"id": "MTK2-S1-154", "q": "Panjang pita adalah 35 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.35 m", "0.70 m", "0.035 m", "3.5 m"], "a": "A"}, {"id": "MTK2-S1-155", "q": "Panjang pita adalah 40 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["4.0 m", "0.80 m", "0.040 m", "0.40 m"], "a": "D"}, {"id": "MTK2-S1-156", "q": "Panjang pita adalah 45 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.45 m", "0.045 m", "4.5 m", "0.90 m"], "a": "A"}, {"id": "MTK2-S1-157", "q": "Panjang pita adalah 50 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["5.0 m", "0.050 m", "1.00 m", "0.50 m"], "a": "D"}, {"id": "MTK2-S1-158", "q": "Panjang pita adalah 55 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.55 m", "0.055 m", "1.10 m", "5.5 m"], "a": "A"}, {"id": "MTK2-S1-159", "q": "Panjang pita adalah 60 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["1.20 m", "0.60 m", "0.060 m", "6.0 m"], "a": "B"}, {"id": "MTK2-S1-160", "q": "Panjang pita adalah 65 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.065 m", "1.30 m", "6.5 m", "0.65 m"], "a": "D"}, {"id": "MTK2-S1-161", "q": "Panjang pita adalah 70 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["7.0 m", "0.070 m", "1.40 m", "0.70 m"], "a": "D"}, {"id": "MTK2-S1-162", "q": "Panjang pita adalah 75 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["7.5 m", "0.75 m", "1.50 m", "0.075 m"], "a": "B"}, {"id": "MTK2-S1-163", "q": "Panjang pita adalah 80 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["1.60 m", "0.80 m", "8.0 m", "0.080 m"], "a": "B"}, {"id": "MTK2-S1-164", "q": "Panjang pita adalah 85 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.85 m", "0.085 m", "1.70 m", "8.5 m"], "a": "A"}, {"id": "MTK2-S1-165", "q": "Panjang pita adalah 90 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.090 m", "0.90 m", "1.80 m", "9.0 m"], "a": "B"}, {"id": "MTK2-S1-166", "q": "Panjang pita adalah 95 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["1.90 m", "0.095 m", "9.5 m", "0.95 m"], "a": "D"}, {"id": "MTK2-S1-167", "q": "Panjang pita adalah 100 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["10.0 m", "2.00 m", "0.100 m", "1.00 m"], "a": "D"}, {"id": "MTK2-S1-168", "q": "Panjang pita adalah 105 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["2.10 m", "0.105 m", "1.05 m", "10.5 m"], "a": "C"}, {"id": "MTK2-S1-169", "q": "Panjang pita adalah 110 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["11.0 m", "0.110 m", "2.20 m", "1.10 m"], "a": "D"}, {"id": "MTK2-S1-170", "q": "Panjang pita adalah 115 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.115 m", "11.5 m", "2.30 m", "1.15 m"], "a": "D"}, {"id": "MTK2-S1-171", "q": "Panjang pita adalah 120 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["1.20 m", "0.120 m", "12.0 m", "2.40 m"], "a": "A"}, {"id": "MTK2-S1-172", "q": "Panjang pita adalah 125 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.125 m", "12.5 m", "1.25 m", "2.50 m"], "a": "C"}, {"id": "MTK2-S1-173", "q": "Panjang pita adalah 130 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["13.0 m", "1.30 m", "0.130 m", "2.60 m"], "a": "B"}, {"id": "MTK2-S1-174", "q": "Panjang pita adalah 135 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.135 m", "2.70 m", "1.35 m", "13.5 m"], "a": "C"}, {"id": "MTK2-S1-175", "q": "Panjang pita adalah 140 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.140 m", "1.40 m", "14.0 m", "2.80 m"], "a": "B"}, {"id": "MTK2-S1-176", "q": "Panjang pita adalah 145 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["2.90 m", "0.145 m", "1.45 m", "14.5 m"], "a": "C"}, {"id": "MTK2-S1-177", "q": "Panjang pita adalah 150 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["1.50 m", "0.150 m", "3.00 m", "15.0 m"], "a": "A"}, {"id": "MTK2-S1-178", "q": "Panjang pita adalah 155 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["0.155 m", "3.10 m", "15.5 m", "1.55 m"], "a": "D"}, {"id": "MTK2-S1-179", "q": "Panjang pita adalah 160 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["16.0 m", "1.60 m", "0.160 m", "3.20 m"], "a": "B"}, {"id": "MTK2-S1-180", "q": "Panjang pita adalah 165 cm. Ukuran yang tepat dalam meter adalah ...", "o": ["1.65 m", "3.30 m", "16.5 m", "0.165 m"], "a": "A"}, {"id": "MTK2-S1-181", "q": "Bangun datar yang memiliki empat sisi sama panjang adalah ...", "o": ["oval", "segitiga", "persegi", "lingkaran"], "a": "C"}, {"id": "MTK2-S1-182", "q": "Bangun datar yang memiliki tiga sisi adalah ...", "o": ["lingkaran", "persegi", "segitiga", "persegi panjang"], "a": "C"}, {"id": "MTK2-S1-183", "q": "Bangun yang tidak memiliki sudut adalah ...", "o": ["lingkaran", "persegi panjang", "segitiga", "persegi"], "a": "A"}, {"id": "MTK2-S1-184", "q": "Jumlah sudut pada persegi adalah ...", "o": ["4", "5", "2", "3"], "a": "A"}, {"id": "MTK2-S1-185", "q": "Jumlah sisi pada persegi panjang adalah ...", "o": ["4", "3", "2", "6"], "a": "A"}, {"id": "MTK2-S1-186", "q": "Sisi pada segitiga berjumlah ...", "o": ["3", "4", "2", "5"], "a": "A"}, {"id": "MTK2-S1-187", "q": "Benda yang permukaannya menyerupai lingkaran adalah ...", "o": ["buku", "pintu", "penggaris", "piring"], "a": "D"}, {"id": "MTK2-S1-188", "q": "Benda yang permukaannya menyerupai persegi panjang adalah ...", "o": ["koin", "bola", "buku tulis", "roda"], "a": "C"}, {"id": "MTK2-S1-189", "q": "Dua persegi masing-masing memiliki 4 sisi. Jumlah sisinya adalah ...", "o": ["7", "6", "8", "9"], "a": "C"}, {"id": "MTK2-S1-190", "q": "Bangun yang mempunyai empat sisi dan empat sudut disebut ...", "o": ["segi empat", "segitiga", "oval", "lingkaran"], "a": "A"}, {"id": "MTK2-S1-191", "q": "Perhatikan pola bilangan berikut: 2, 4, 6, 8, ... Bilangan berikutnya adalah ...", "o": ["11", "10", "12", "9"], "a": "B"}, {"id": "MTK2-S1-192", "q": "Perhatikan pola bilangan berikut: 5, 10, 15, 20, ... Bilangan berikutnya adalah ...", "o": ["25", "24", "22", "23"], "a": "A"}, {"id": "MTK2-S1-193", "q": "Perhatikan pola bilangan berikut: 10, 20, 30, 40, ... Bilangan berikutnya adalah ...", "o": ["50", "55", "60", "45"], "a": "A"}, {"id": "MTK2-S1-194", "q": "Perhatikan pola bilangan berikut: 1, 3, 5, 7, ... Bilangan berikutnya adalah ...", "o": ["10", "8", "11", "9"], "a": "D"}, {"id": "MTK2-S1-195", "q": "Perhatikan pola bilangan berikut: 4, 8, 12, 16, ... Bilangan berikutnya adalah ...", "o": ["20", "24", "18", "22"], "a": "A"}, {"id": "MTK2-S1-196", "q": "Perhatikan pola bilangan berikut: 30, 27, 24, 21, ... Bilangan berikutnya adalah ...", "o": ["22", "20", "18", "19"], "a": "C"}, {"id": "MTK2-S1-197", "q": "Perhatikan pola bilangan berikut: 50, 45, 40, 35, ... Bilangan berikutnya adalah ...", "o": ["30", "35", "40", "25"], "a": "A"}, {"id": "MTK2-S1-198", "q": "Perhatikan pola bilangan berikut: 3, 6, 9, 12, ... Bilangan berikutnya adalah ...", "o": ["18", "16", "14", "15"], "a": "D"}, {"id": "MTK2-S1-199", "q": "Perhatikan pola bilangan berikut: 7, 14, 21, 28, ... Bilangan berikutnya adalah ...", "o": ["35", "32", "36", "42"], "a": "A"}, {"id": "MTK2-S1-200", "q": "Perhatikan pola bilangan berikut: 100, 90, 80, 70, ... Bilangan berikutnya adalah ...", "o": ["50", "75", "65", "60"], "a": "D"}];
+const DEFAULT_SUBJECTS=[
+["Al-Qur'an Hadis","alquran"],["Akidah Akhlak","akidah"],["Fikih","fikih"],["SKI","ski"],
+["Bahasa Arab","arab"],["Bahasa Indonesia","indonesia"],["Matematika","matematika"],
+["Pendidikan Pancasila","pancasila"],["IPAS","ipas"],["Seni Budaya","seni"],["PJOK","pjok"]
+];
+let SUBJECTS=JSON.parse(JSON.stringify(DEFAULT_SUBJECTS));
+const $=id=>document.getElementById(id);
+let qs=[],ans=[],idx=0,student={};
+let currentRole=null;
+
+// ================= FIREBASE (SIAP DIHUBUNGKAN) =================
+// Setelah proyek Firebase dibuat, isi 6 nilai di bawah dari Firebase Console > Project settings > Your apps.
+const FIREBASE_CONFIG={
+  apiKey:"AIzaSyDzDZC9kWG5E-a3mTBUMyLkI52nouY4VI0",
+  authDomain:"kuis-pintar-online.firebaseapp.com",
+  projectId:"kuis-pintar-online",
+  storageBucket:"kuis-pintar-online.firebasestorage.app",
+  messagingSenderId:"172555923696",
+  appId:"1:172555923696:web:f3bd012001858f1731d235",
+  measurementId:"G-2TG6MVLS0M"
+};
+const CLOUDINARY_CLOUD_NAME="nojnf1aa";
+const CLOUDINARY_UPLOAD_PRESET="kuis_mi_dekorasi";
+const CLOUDINARY_UPLOAD_URL="https://api.cloudinary.com/v1_1/"+CLOUDINARY_CLOUD_NAME+"/image/upload";
+let firebaseReady=false, db=null, auth=null;
+// Pola sinkronisasi mengikuti referensi KSI: Firestore realtime -> onSnapshot -> state aplikasi.
+// Bank soal tidak dibaca dari localStorage dan tidak memakai bank bawaan sebagai sumber kuis.
+let onlineBank=[];
+let onlineBankAll=[];
+let onlineBankSubject="", onlineBankSemester="";
+let bankUnsubscribe=null;
+let bankFirstSnapshot=false;
+let lastServerReadAt=0;
+
+function setFirebaseStatus(text,ok=false){
+  const el=$("firebaseStatus");
+  if(!el)return;
+  el.textContent=text;
+  el.style.background=ok?"#ecfdf5":"#ecfeff";
+  el.style.borderColor=ok?"#86efac":"#67e8f9";
+  el.style.color=ok?"#166534":"#155e75";
+}
+function firebaseConfigured(){
+  return FIREBASE_CONFIG.apiKey && !String(FIREBASE_CONFIG.apiKey).startsWith("GANTI_") &&
+         FIREBASE_CONFIG.projectId && !String(FIREBASE_CONFIG.projectId).startsWith("GANTI_");
+}
+function initFirebase(){
+  if(firebaseReady && db) return true;
+  if(!firebaseConfigured()){
+    setFirebaseStatus("☁️ ONLINE: konfigurasi Firebase belum lengkap.",false);
+    return false;
+  }
+  try{
+    setFirebaseStatus("🔄 Menghubungkan ke Firebase Server...",false);
+    if(!window.firebase) throw new Error("Firebase SDK tidak termuat");
+    if(!firebase.apps.length){
+      firebase.initializeApp(FIREBASE_CONFIG);
+    }else if(firebase.apps[0] && firebase.apps[0].options &&
+             firebase.apps[0].options.projectId!==FIREBASE_CONFIG.projectId){
+      try{firebase.app().delete()}catch(e){}
+      firebase.initializeApp(FIREBASE_CONFIG);
+    }
+    db=firebase.firestore();
+    firebaseReady=true;
+    return true;
+  }catch(e){
+    console.error("Firebase init gagal:",e);
+    firebaseReady=false;
+    setFirebaseStatus("❌ Firebase gagal diinisialisasi: "+(e.code||e.message||"error"),false);
+    return false;
+  }
+}
+function normalizeCloudQuestion(doc){
+  const x=doc.data()||{};
+  const q=x.q??x.pertanyaan??x.question??"";
+  const o=Array.isArray(x.o)?x.o:[x.opsiA,x.opsiB,x.opsiC,x.opsiD];
+  const a=x.a??x.jawaban??x.answer??"";
+  const aktif=x.aktif===true || x.active===true;
+  if(!aktif || !String(q).trim() || !Array.isArray(o) || o.length!==4 ||
+     o.some(v=>v===undefined||v===null||String(v).trim()==="") || !String(a).trim()) return null;
+  return {
+    id:String(x.id||x.kode||doc.id),
+    kode:String(x.kode||x.id||doc.id),
+    q:String(q), o:o.map(v=>String(v)),
+    a:String(a).trim().toUpperCase(),
+    mapel:String(x.mapel??x.mataPelajaran??x.subject??""),
+    semester:Number(x.semester), _docId:doc.id, _cloud:true
+  };
+}
+function normalizeSubject(v){
+  const s=String(v||"").trim().toLowerCase().replace(/\s+/g," ");
+  if(s==="akidah"||s==="akidah akhlak"||s==="akidah-akhlak"||s==="akidah_akhlak")return "akidah";
+  if(s==="alquran"||s==="al quran hadis"||s==="al-qur'an hadis"||s==="alquran hadis")return "alquran";
+  return s;
+}
+function filterOnlineBank(subject,semester){
+  const targetMapel=normalizeSubject(subject), targetSemester=Number(semester);
+  return onlineBankAll.filter(x=>normalizeSubject(x.mapel)===targetMapel &&
+                                Number(x.semester)===targetSemester);
+}
+function withTimeout(promise,ms){
+  return Promise.race([
+    promise,
+    new Promise((_,reject)=>setTimeout(()=>reject(new Error("TIMEOUT_FIREBASE_SERVER")),ms))
+  ]);
+}
+async function readBankFromServer(){
+  if(!firebaseReady||!db) return null;
+  try{
+    // Jalur Uji 23 dibuat sengaja identik dengan diagnosis Firebase yang sebelumnya BERHASIL di Android.
+    const snap=await withTimeout(
+      db.collection("bank_soal").where("aktif","==",true).get({source:"server"}),
+      12000
+    );
+    const seen=new Map();
+    let rawCount=0, validCount=0, invalidCount=0;
+    snap.forEach(doc=>{
+      rawCount++;
+      const q=normalizeCloudQuestion(doc);
+      if(q){validCount++; if(!seen.has(q.id))seen.set(q.id,q);}
+      else invalidCount++;
+    });
+    onlineBankAll=Array.from(seen.values());
+    bankFirstSnapshot=true;
+    lastServerReadAt=Date.now();
+    setFirebaseStatus("☁️ FIREBASE SERVER: "+validCount+" soal valid dari "+rawCount+
+      " dokumen aktif.",true);
+    return {rawCount,validCount,invalidCount,rows:onlineBankAll};
+  }catch(e){
+    console.error("Firestore server read gagal:",e);
+    bankFirstSnapshot=false;
+    const msg=e.message==="TIMEOUT_FIREBASE_SERVER" ?
+      "⏱️ Firebase Server tidak merespons dalam 12 detik." :
+      "❌ Firebase Server gagal membaca: "+(e.code||e.message||"error");
+    setFirebaseStatus(msg,false);
+    return null;
+  }
+}
+function startBankRealtime(){
+  if(!firebaseReady||!db)return false;
+  if(bankUnsubscribe)return true;
+  try{
+    bankUnsubscribe=db.collection("bank_soal").where("aktif","==",true)
+      .onSnapshot({includeMetadataChanges:true},snapshot=>{
+        const seen=new Map();
+        snapshot.forEach(doc=>{
+          const q=normalizeCloudQuestion(doc);
+          if(q&&!seen.has(q.id))seen.set(q.id,q);
+        });
+        // Realtime hanya memperbarui RAM setelah snapshot diterima.
+        // Koneksi/tes tidak lagi menggantung menunggu listener.
+        onlineBankAll=Array.from(seen.values());
+        if(snapshot.metadata && !snapshot.metadata.fromCache){
+          bankFirstSnapshot=true;
+          lastServerReadAt=Date.now();
+          if(onlineBankSubject!=="")
+            onlineBank=filterOnlineBank(onlineBankSubject,onlineBankSemester);
+        }
+      },error=>{
+        console.error("Firestore realtime listener:",error);
+        // Listener opsional; kegagalan listener tidak memblokir server get().
+      });
+    return true;
+  }catch(e){
+    console.error("Gagal memasang realtime listener:",e);
+    return false;
+  }
+}
+async function refreshCloudBank(subject,semester){
+  if(!firebaseReady)return null;
+  const result=await readBankFromServer();
+  if(!result)return null;
+  onlineBank=filterOnlineBank(subject,semester);
+  onlineBankSubject=subject;
+  onlineBankSemester=String(semester);
+  startBankRealtime(); // realtime tambahan, bukan syarat untuk lanjut.
+  setFirebaseStatus("☁️ FIREBASE SERVER: "+onlineBank.length+
+    " soal online untuk "+subject+" S"+semester+
+    " • total bank aktif "+onlineBankAll.length+".",true);
+  return onlineBank;
+}
+
+function getCloudCache(){
+  // ONLINE ONLY: fungsi ini sengaja tidak membaca localStorage.
+  return [];
+}
+function cloudQuestionKey(subject,semester,id){
+  const s=normalizeSubject(subject)||"mapel";
+  const sem=Number(semester)||1;
+  const safeId=String(id||Date.now()).replace(/[^a-zA-Z0-9_-]/g,"_");
+  return "soal_"+s+"_S"+sem+"_"+safeId;
+}
+async function verifySavedQuestionCloud(docId,subject,semester){
+  try{
+    const snap=await db.collection("bank_soal").doc(docId).get({source:"server"});
+    if(!snap.exists)return {ok:false,message:"Dokumen tidak ditemukan di Firebase Server."};
+    const x=snap.data()||{};
+    const mapel=String(x.mapel||"");
+    const sem=Number(x.semester);
+    const match=normalizeSubject(mapel)===normalizeSubject(subject) && sem===Number(semester) && x.aktif===true;
+    return {ok:match,mapel,semester:sem,aktif:x.aktif===true,id:String(x.id||snap.id),docId:snap.id};
+  }catch(e){
+    return {ok:false,message:e.code||e.message||"gagal membaca kembali dokumen"};
+  }
+}
+async function saveQuestionCloud(subject,semester,x){
+  if(!firebaseReady)return false;
+  try{
+    const docId=x._docId||cloudQuestionKey(subject,semester,x.id);
+    await db.collection("bank_soal").doc(docId).set({
+      id:x.id,kode:x.kode||x.id,mapel:subject,semester:Number(semester),
+      q:x.q,pertanyaan:x.q,o:x.o,opsiA:x.o[0],opsiB:x.o[1],opsiC:x.o[2],opsiD:x.o[3],
+      a:x.a,jawaban:x.a,active:true,aktif:true,
+      updatedAt:new Date().toISOString(),updatedBy:currentRole||"unknown"
+    },{merge:true});
+    return true;
+  }catch(e){console.error(e);alert("❌ Soal TIDAK disimpan di perangkat. Firebase menolak penyimpanan. Pastikan Rules Firebase mengizinkan penulisan bank_soal.");return false}
+}
+async function deleteQuestionCloud(subject,semester,x){
+  if(!firebaseReady)return false;
+  try{
+    const docId=x&&x._docId?x._docId:cloudQuestionKey(subject,semester,x&&x.id?x.id:x);
+    await db.collection("bank_soal").doc(docId).set({aktif:false,active:false,updatedAt:new Date().toISOString(),updatedBy:currentRole||"unknown"},{merge:true});
+    return true;
+  }catch(e){console.error(e);alert("❌ Soal tidak dihapus dari perangkat karena MODE ONLINE. Firebase menolak perubahan. Periksa Rules Firebase.");return false}
+}
+async function saveResultCloud(hasil){
+  if(!firebaseReady||!db)return {ok:false,message:"Firebase belum siap."};
+  try{
+    const ref=await db.collection("hasil_kuis").add({...hasil,createdAt:firebase.firestore.FieldValue.serverTimestamp()});
+    return {ok:true,id:ref.id};
+  }catch(e){
+    console.error("Gagal menyimpan hasil kuis:",e);
+    return {ok:false,code:e.code||"",message:e.message||"Gagal menyimpan hasil ke Firebase."};
+  }
+}
+async function loadResultsCloud(){
+  if(!firebaseReady||!db)return {ok:false,rows:[],message:"Firebase belum siap."};
+  try{
+    const snap=await db.collection("hasil_kuis").get({source:"server"});
+    const out=[];snap.forEach(d=>out.push({id:d.id,...d.data()}));
+    out.sort((a,b)=>String(b.finished||"").localeCompare(String(a.finished||"")));
+    return {ok:true,rows:out};
+  }catch(e){
+    console.error("Gagal membaca hasil kuis:",e);
+    return {ok:false,rows:[],code:e.code||"",message:e.message||"Gagal membaca hasil dari Firebase."};
+  }
+}
+async function sinkronkanSekarang(){if(currentRole!=="guru"&&currentRole!=="admin"){alert("Akses hanya untuk Guru/Admin.");return}const ok=await initFirebase();if(!ok)return;const rows=await refreshCloudBank($("addMapel").value,$("addSemester").value);if(rows!==null)lihatBank(rows);alert(rows===null?"❌ Firebase Server gagal dibaca.":"✅ Sinkronisasi langsung dari Firebase Server selesai. "+rows.length+" soal.")}
+
+const DEFAULT_APP_SETTINGS={
+  schoolName:'MI LIWAUL ISLAM',
+  schoolSub:'Belajar • Bermain • Berprestasi • Berakhlak Mulia',
+  logoDataUrl:'',
+  decoration:{enabled:true,speed:'normal',motion:'float',images:['','','','']},
+  subjects:JSON.parse(JSON.stringify(DEFAULT_SUBJECTS)),
+  access:{
+    guru:{kelolaSoal:true,lihatHasil:true,lihatRekapBank:true,kelolaMapel:false,sinkronFirebase:false,tesFirebase:false,manajemenAkun:false,pengaturan:false},
+    siswa:{kerjakanKuis:true,lihatNilaiSendiri:true,lihatRekapBank:false,kelolaMapel:false,kelolaSoal:false,lihatHasil:false,sinkronFirebase:false,tesFirebase:false,manajemenAkun:false,pengaturan:false}
+  }
+};
+let appSettings=JSON.parse(JSON.stringify(DEFAULT_APP_SETTINGS));
+let appSettingsUnsub=null;
+function mergeAppSettings(raw){
+  const x=raw||{};
+  appSettings={...JSON.parse(JSON.stringify(DEFAULT_APP_SETTINGS)),...x,decoration:{...DEFAULT_APP_SETTINGS.decoration,...((x.decoration||{})),motion:(x.decoration&&x.decoration.motion)||DEFAULT_APP_SETTINGS.decoration.motion,images:Array.isArray((x.decoration||{}).images)?[...x.decoration.images,'','','',''].slice(0,4):[...DEFAULT_APP_SETTINGS.decoration.images]},access:{...DEFAULT_APP_SETTINGS.access,guru:{...DEFAULT_APP_SETTINGS.access.guru,...((x.access||{}).guru||{})},siswa:{...DEFAULT_APP_SETTINGS.access.siswa,...((x.access||{}).siswa||{})}}};
+  if(Array.isArray(x.subjects)&&x.subjects.length){SUBJECTS=x.subjects.map(v=>Array.isArray(v)?[String(v[0]||''),String(v[1]||'')]:[String(v.name||''),String(v.id||'')]).filter(v=>v[0]&&v[1]);appSettings.subjects=JSON.parse(JSON.stringify(SUBJECTS));}
+  else SUBJECTS=JSON.parse(JSON.stringify(DEFAULT_SUBJECTS));
+  applyAppSettings();
+  if(typeof fillSubjects==='function')fillSubjects();
+  if(typeof applyRoleMenu==='function')applyRoleMenu();
+  return appSettings;
+}
+function applyAppSettings(){
+  const name=appSettings.schoolName||DEFAULT_APP_SETTINGS.schoolName, sub=appSettings.schoolSub||DEFAULT_APP_SETTINGS.schoolSub;
+  const title=$('schoolTitle'), subtitle=$('schoolSub'), logo=$('schoolLogo');
+  if(title)title.textContent=name; if(subtitle)subtitle.textContent=sub;
+  if(logo)logo.src=appSettings.logoUrl||((typeof appSettings.logoDataUrl==='string'&&/^https?:\/\//.test(appSettings.logoDataUrl))?appSettings.logoDataUrl:'')||logo.dataset.defaultSrc||logo.src;
+  document.title=name+' - Kuis MI Kelas 2';
+  applyDecorationSettings();
+}
+function applyDecorationSettings(){
+  const box=$('miniStars'); if(!box)return;
+  const d=appSettings.decoration||DEFAULT_APP_SETTINGS.decoration;
+  const imgs=Array.isArray(d.images)?d.images.filter(Boolean):[];
+  box.className='miniStars '+(d.enabled===false?'decor-off':'decor-'+(d.speed||'normal'))+' motion-'+(d.motion||'float')+(imgs.length?' decor-imgs':'');
+  const defaults=['⭐','✨','🌟','📚'];
+  box.innerHTML=(imgs.length?imgs:defaults).slice(0,4).map((v,i)=>imgs.length?'<span><img src="'+String(v).replace(/"/g,'&quot;')+'" alt="Dekorasi"></span>':'<span>'+v+'</span>').join('');
+  renderDecorationPreview();
+}
+function renderDecorationPreview(){
+  const p=$('decorPreview'); if(!p)return; const d=appSettings.decoration||DEFAULT_APP_SETTINGS.decoration,imgs=(Array.isArray(d.images)?d.images.filter(Boolean):[]);
+  p.innerHTML=imgs.length?imgs.map(v=>'<img src="'+String(v).replace(/"/g,'&quot;')+'" alt="Dekorasi">').join(''):'<span class="muted">Menggunakan dekorasi bawaan ⭐ ✨ 🌟 📚</span>';
+}
+async function readDecorationImage(file){return file?readImageAsDataUrl(file,120000):''}
+async function uploadImageToCloudinary(file,label){
+  if(!file) return '';
+  if(!/^image\//i.test(file.type||'')) throw new Error('File bukan gambar.');
+  const fd=new FormData();
+  fd.append('file',file,file.name||((label||'gambar')+'.png'));
+  fd.append('upload_preset',CLOUDINARY_UPLOAD_PRESET);
+  const res=await fetch(CLOUDINARY_UPLOAD_URL,{method:'POST',body:fd});
+  let data=null;
+  try{data=await res.json()}catch(_){data=null}
+  if(!res.ok || !data || !data.secure_url){
+    const detail=data&&data.error&&data.error.message?data.error.message:('HTTP '+res.status);
+    throw new Error('Upload Cloudinary gagal: '+detail);
+  }
+  return String(data.secure_url);
+}
+async function uploadDecorationToCloudinary(file,index){
+  return uploadImageToCloudinary(file,'dekorasi-'+index);
+}
+function isiFormDekorasi(){
+  const d=appSettings.decoration||DEFAULT_APP_SETTINGS.decoration;
+  $('decorEnabled').value=String(d.enabled!==false);
+  $('decorSpeed').value=d.speed||'normal';
+  $('decorMotion').value=d.motion||'float';
+  ['1','2','3','4'].forEach(n=>{const el=$('decorFile'+n);if(el)el.value=''});
+  renderDecorationPreview();
+}
+async function kumpulkanDekorasi(){
+  const old=(appSettings.decoration&&Array.isArray(appSettings.decoration.images))?appSettings.decoration.images.slice(0,4):['','','',''];
+  while(old.length<4)old.push('');
+  for(let i=0;i<4;i++){
+    const f=$('decorFile'+(i+1));
+    if(f&&f.files&&f.files[0]){
+      if(typeof navigator!=='undefined' && navigator.onLine===false) throw new Error('Koneksi internet tidak tersedia untuk mengunggah gambar dekorasi.');
+      old[i]=await uploadDecorationToCloudinary(f.files[0],i+1);
+    }
+  }
+  return {
+    enabled:$('decorEnabled').value==='true',
+    speed:$('decorSpeed').value||'normal',
+    motion:$('decorMotion').value||'float',
+    images:old
+  };
+}
+async function simpanDekorasiFirestore(decoration){
+  if(!firebaseReady||!db)throw new Error('Firebase belum siap.');
+  const meta={
+    enabled:decoration.enabled!==false,
+    speed:decoration.speed||'normal',
+    motion:decoration.motion||'float'
+  };
+  // Simpan pengaturan kecil di dokumen umum.
+  await db.collection('app_settings').doc('general').set({
+    decoration:meta,
+    updatedAt:new Date().toISOString(),
+    updatedBy:'admin'
+  },{merge:true});
+  // Setiap gambar disimpan di dokumen Firestore terpisah agar tidak membebani
+  // dokumen app_settings/general. Maksimal 4 dokumen kecil.
+  for(let i=0;i<4;i++){
+    const ref=db.collection('app_decoration').doc(String(i+1));
+    const image=String((decoration.images||[])[i]||'');
+    if(image){
+      await ref.set({
+        image:image,
+        slot:i+1,
+        updatedAt:new Date().toISOString(),
+        updatedBy:'admin'
+      },{merge:true});
+    }else{
+      await ref.delete();
+    }
+  }
+}
+async function loadDecorationFirestore(){
+  if(!firebaseReady||!db)return;
+  const base=appSettings.decoration||DEFAULT_APP_SETTINGS.decoration;
+  const imgs=['','','',''];
+  try{
+    const snap=await db.collection('app_decoration').get({source:'server'});
+    snap.forEach(doc=>{
+      const d=doc.data()||{};
+      const n=Math.max(1,Math.min(4,parseInt(d.slot||doc.id,10)||0));
+      if(n>=1&&n<=4&&typeof d.image==='string')imgs[n-1]=d.image;
+    });
+    appSettings={...appSettings,decoration:{...base,images:imgs}};
+    applyAppSettings();
+  }catch(e){
+    console.warn('loadDecorationFirestore:',e);
+  }
+}
+async function hapusDekorasi(){
+  if(currentRole!=='admin')return;
+  if(!confirm('Hapus semua gambar dekorasi dan kembali ke dekorasi bawaan?'))return;
+  try{
+    for(let i=1;i<=4;i++)await db.collection('app_decoration').doc(String(i)).delete();
+    const decoration={enabled:true,speed:'normal',motion:'float',images:['','','','']};
+    await db.collection('app_settings').doc('general').set({
+      decoration:{enabled:true,speed:'normal',motion:'float'},
+      updatedAt:new Date().toISOString(),
+      updatedBy:'admin'
+    },{merge:true});
+    mergeAppSettings({...appSettings,decoration});
+    isiFormDekorasi();
+    $('decorInfo').textContent='✅ Semua dekorasi gambar dihapus. Dekorasi bawaan aktif.';
+  }catch(e){
+    console.error('hapusDekorasi:',e);
+    $('decorInfo').textContent='❌ Gagal menghapus dekorasi: '+(e.code||e.message||e);
+  }
+}
+async function resetDekorasiDefault(){await hapusDekorasi()}
+
+async function loadAppSettings(){
+  const ok=await initFirebase(); if(!ok)return false;
+  try{
+    const snap=await db.collection('app_settings').doc('general').get({source:'server'});
+    if(snap.exists)mergeAppSettings(snap.data());
+    else if(currentRole==='admin'){
+      await db.collection('app_settings').doc('general').set({
+        schoolName:DEFAULT_APP_SETTINGS.schoolName,
+        schoolSub:DEFAULT_APP_SETTINGS.schoolSub,
+        logoDataUrl:'',
+        subjects:DEFAULT_SUBJECTS.map(v=>({name:String(v[0]),id:String(v[1])})),
+        access:DEFAULT_APP_SETTINGS.access,
+        decoration:DEFAULT_APP_SETTINGS.decoration,
+        updatedAt:new Date().toISOString(),
+        updatedBy:'admin'
+      },{merge:true});
+    }
+    await loadDecorationFirestore();
+    if(appSettingsUnsub)appSettingsUnsub();
+    appSettingsUnsub=db.collection('app_settings').doc('general').onSnapshot(s=>{
+      if(s.exists)mergeAppSettings(s.data());
+    });
+    if(window.appDecorationUnsub)window.appDecorationUnsub();
+    window.appDecorationUnsub=db.collection('app_decoration').onSnapshot(s=>{
+      const imgs=['','','',''];
+      s.forEach(doc=>{
+        const d=doc.data()||{};
+        const n=Math.max(1,Math.min(4,parseInt(d.slot||doc.id,10)||0));
+        if(n>=1&&n<=4&&typeof d.image==='string')imgs[n-1]=d.image;
+      });
+      appSettings={...appSettings,decoration:{...(appSettings.decoration||{}),images:imgs}};
+      applyAppSettings();
+    });
+    return true;
+  }catch(e){
+    console.warn('loadAppSettings:',e);
+    applyAppSettings();
+    return false;
+  }
+}
+function canAccess(action){
+  if(currentRole==='admin')return true;
+  const r=(appSettings.access&&appSettings.access[currentRole])||{};
+  return r[action]===true;
+}
+function applyRoleMenu(){
+  const isSiswa=currentRole==='siswa', isGuru=currentRole==='guru', isAdmin=currentRole==='admin';
+  $('staffMenu').classList.toggle('hidden',isSiswa);
+  $('studentMenu').classList.toggle('hidden',!isSiswa);
+  $('adminAccountBtn').classList.toggle('hidden',!isAdmin);
+  $('adminSettingsBtn').classList.toggle('hidden',!isAdmin);
+  const rekap=$('btnRekapBank'); if(rekap)rekap.classList.toggle('hidden',!canAccess('lihatRekapBank'));
+  const mapelBtn=$('btnKelolaMapel'); if(mapelBtn)mapelBtn.classList.toggle('hidden',!canAccess('kelolaMapel'));
+  const kelola=$('btnKelolaSoal'); if(kelola)kelola.classList.toggle('hidden',isSiswa || !canAccess('kelolaSoal'));
+  const hasil=$('btnHasilSiswa'); if(hasil)hasil.classList.toggle('hidden',isSiswa || !canAccess('lihatHasil'));
+  const mulaiBtn=$('btnMulaiKuis'); if(mulaiBtn)mulaiBtn.classList.toggle('hidden',!canAccess('kerjakanKuis') && !isAdmin);
+  const nilaiSaya=$('btnNilaiSaya'); if(nilaiSaya)nilaiSaya.classList.toggle('hidden',!isSiswa || !canAccess('lihatNilaiSendiri'));
+}
+function bukaPengaturanAdmin(){
+  if(currentRole!=='admin'){alert('Menu ini hanya untuk Admin.');return}
+  $('home').classList.add('hidden');$('kelola').classList.add('hidden');$('hasilGuru').classList.add('hidden');$('hasilSaya').classList.add('hidden');$('akunAdmin').classList.add('hidden');$('pengaturanAdmin').classList.remove('hidden');
+  $('accessGuruKelola').value=String(!!appSettings.access.guru.kelolaSoal);$('accessGuruHasil').value=String(!!appSettings.access.guru.lihatHasil);$('accessGuruRekap').value=String(!!appSettings.access.guru.lihatRekapBank);$('accessGuruMapel').value=String(!!appSettings.access.guru.kelolaMapel);$('accessSiswaKuis').value=String(!!appSettings.access.siswa.kerjakanKuis);$('accessSiswaHasil').value=String(!!appSettings.access.siswa.lihatNilaiSendiri);
+  $('settingSchoolName').value=appSettings.schoolName||'';$('settingSchoolSub').value=appSettings.schoolSub||'';isiFormDekorasi();$('settingsInfo').textContent='Pengaturan saat ini dibaca dari Firebase.';
+}
+function readImageAsDataUrl(file,maxSize=140000){
+  return new Promise((resolve,reject)=>{
+    if(!file){resolve('');return}
+    if(!/^image\//i.test(file.type||'')){reject(new Error('File bukan gambar.'));return}
+    const fr=new FileReader();
+    fr.onerror=()=>reject(new Error('Gambar tidak dapat dibaca.'));
+    fr.onload=()=>{
+      const img=new Image();
+      img.onload=()=>{
+        try{
+          const maxDim=800;
+          const scale=Math.min(1,maxDim/Math.max(img.naturalWidth||img.width,img.naturalHeight||img.height));
+          const w=Math.max(1,Math.round((img.naturalWidth||img.width)*scale));
+          const h=Math.max(1,Math.round((img.naturalHeight||img.height)*scale));
+          const c=document.createElement('canvas');c.width=w;c.height=h;
+          const ctx=c.getContext('2d',{alpha:true});ctx.clearRect(0,0,w,h);ctx.drawImage(img,0,0,w,h);
+          let data='';
+          // WebP menjaga transparansi PNG dan biasanya jauh lebih ringan.
+          if(c.toDataURL('image/webp').indexOf('data:image/webp')===0){
+            let q=.82;data=c.toDataURL('image/webp',q);
+            while(data.length>maxSize*1.37&&q>.35){q-=.07;data=c.toDataURL('image/webp',q)}
+          }else{
+            // Fallback untuk browser yang tidak mendukung WebP.
+            let q=.82;data=c.toDataURL('image/jpeg',q);
+            while(data.length>maxSize*1.37&&q>.35){q-=.07;data=c.toDataURL('image/jpeg',q)}
+          }
+          resolve(data);
+        }catch(e){reject(e)}
+      };
+      img.onerror=()=>reject(new Error('Format gambar tidak dapat diproses.'));
+      img.src=fr.result;
+    };
+    fr.readAsDataURL(file);
+  })
+}
+async function simpanPengaturanAdmin(){
+  if(currentRole!=='admin'){alert('Hanya Admin yang boleh mengubah pengaturan.');return}
+  const info=$('settingsInfo');
+  info.textContent='🔄 Menyimpan pengaturan dan gambar dekorasi...';
+  try{
+    if(!firebaseReady||!db)throw new Error('Firebase belum siap.');
+    const logoFile=$('settingLogoFile').files[0];
+    let logoUrl='';
+    if(logoFile){
+      if(navigator.onLine===false)throw new Error('Koneksi internet tidak tersedia untuk mengunggah logo.');
+      info.textContent='🔄 Mengunggah logo ke Cloudinary...';
+      logoUrl=await uploadImageToCloudinary(logoFile,'logo-sekolah');
+    }else{
+      const oldLogo=String(appSettings.logoUrl||'');
+      logoUrl=/^https?:\/\//i.test(oldLogo)?oldLogo:'';
+      // Jangan pernah mengirim Base64 logo lama ke Firestore.
+    }
+
+    const decoration=await kumpulkanDekorasi();
+    const decorationMeta={
+      enabled:decoration.enabled,
+      speed:decoration.speed,
+      motion:decoration.motion,
+      images:['','','','']
+    };
+    const data={
+      schoolName:$('settingSchoolName').value.trim()||DEFAULT_APP_SETTINGS.schoolName,
+      schoolSub:$('settingSchoolSub').value.trim()||DEFAULT_APP_SETTINGS.schoolSub,
+      logoUrl:logoUrl,
+      // Sengaja kosong agar Base64 lama tidak ikut tersimpan lagi.
+      logoDataUrl:'',
+      decoration:decorationMeta,
+      subjects:Array.isArray(SUBJECTS)?SUBJECTS.map(v=>({name:String(v&&v[0]||''),id:String(v&&v[1]||'')})).filter(v=>v.name&&v.id):[],
+      access:{
+        guru:{
+          kelolaSoal:$('accessGuruKelola').value==='true',
+          lihatHasil:$('accessGuruHasil').value==='true',
+          lihatRekapBank:$('accessGuruRekap').value==='true',
+          kelolaMapel:$('accessGuruMapel').value==='true',
+          sinkronFirebase:false,tesFirebase:false,manajemenAkun:false,pengaturan:false
+        },
+        siswa:{
+          kerjakanKuis:$('accessSiswaKuis').value==='true',
+          lihatNilaiSendiri:$('accessSiswaHasil').value==='true',
+          kelolaSoal:false,lihatHasil:false,sinkronFirebase:false,tesFirebase:false,manajemenAkun:false,pengaturan:false
+        }
+      },
+      updatedAt:new Date().toISOString(),
+      updatedBy:'admin'
+    };
+
+    await db.collection('app_settings').doc('general').set(data,{merge:true});
+    await simpanDekorasiFirestore(decoration);
+
+    const finalDecoration={...decorationMeta,images:decoration.images};
+    mergeAppSettings({...data,decoration:finalDecoration});
+    $('settingLogoFile').value='';
+    ['1','2','3','4'].forEach(n=>{const el=$('decorFile'+n);if(el)el.value=''});
+    info.textContent='✅ Pengaturan tersimpan di Firebase. Perangkat siswa/guru akan mengikuti perubahan ini secara otomatis.';
+    const di=$('decorInfo');
+    if(di)di.textContent='✅ Pengaturan dekorasi dan gambar berhasil disimpan.';
+  }catch(e){
+    console.error('simpanPengaturanAdmin:',e);
+    const raw=String((e&&e.message)||e||'');
+    let msg=(e&&e.code)||raw||'error';
+    if(/cloudinary|upload preset|unsigned|HTTP 4|HTTP 5/i.test(raw)) msg='Upload gambar ke Cloudinary gagal: '+raw;
+    else if(/invalid-argument|invalid argument/i.test(raw)) msg='Data pengaturan masih mengandung nilai yang tidak valid. Versi ini sudah mencegah Base64 gambar masuk ke Firestore.';
+    info.textContent='❌ Gagal menyimpan ke Firebase: '+msg;
+  }
+}
+async function resetTampilanDefault(){
+  if(currentRole!=='admin')return;
+  if(!confirm('Kembalikan nama, subjudul, dan logo ke default?'))return;
+  $('settingSchoolName').value=DEFAULT_APP_SETTINGS.schoolName;
+  $('settingSchoolSub').value=DEFAULT_APP_SETTINGS.schoolSub;
+  $('settingLogoFile').value='';
+  try{
+    for(let i=1;i<=4;i++)await db.collection('app_decoration').doc(String(i)).delete();
+    const decoration={enabled:true,speed:'normal',motion:'float',images:['','','','']};
+    await db.collection('app_settings').doc('general').set({
+      schoolName:DEFAULT_APP_SETTINGS.schoolName,
+      schoolSub:DEFAULT_APP_SETTINGS.schoolSub,
+      logoUrl:'',
+      logoDataUrl:'',
+      decoration:{enabled:true,speed:'normal',motion:'float'},
+      updatedAt:new Date().toISOString(),
+      updatedBy:'admin'
+    },{merge:true});
+    mergeAppSettings({...appSettings,...DEFAULT_APP_SETTINGS,decoration,access:appSettings.access});
+    $('settingsInfo').textContent='✅ Tampilan default berhasil dipulihkan di Firebase.';
+  }catch(e){
+    $('settingsInfo').textContent='❌ Gagal memulihkan default: '+(e.code||e.message||e);
+  }
+}
+
+const DEFAULT_USERS={admin:{username:'admin',password:'admin123',nama:'Administrator'},guru:{username:'guru',password:'guru123',nama:'Guru MI'},siswa:{username:'siswa',password:'siswa123',nama:'Siswa Demo'}};
+function getUsers(){try{const saved=JSON.parse(localStorage.getItem('kuisMI_users')||'null');return saved&&saved.admin&&saved.guru&&saved.siswa?saved:JSON.parse(JSON.stringify(DEFAULT_USERS))}catch(e){return JSON.parse(JSON.stringify(DEFAULT_USERS))}}
+function saveUsers(u){localStorage.setItem('kuisMI_users',JSON.stringify(u))}
+async function hashPassword(v){
+  const text=String(v||'');
+  if(window.crypto&&crypto.subtle){
+    const data=new TextEncoder().encode(text);
+    const hash=await crypto.subtle.digest('SHA-256',data);
+    return Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  }
+  return text;
+}
+async function readCloudUser(role){
+  if(!firebaseReady||!db)return null;
+  try{
+    const snap=await db.collection('users').doc(String(role)).get({source:'server'});
+    if(!snap.exists)return null;
+    const x=snap.data()||{};
+    return {role:String(role),username:String(x.username||role),nama:String(x.nama||role),passwordHash:String(x.passwordHash||''),password:x.password!==undefined?String(x.password):''};
+  }catch(e){console.warn('readCloudUser:',e);return null}
+}
+async function saveCloudUser(role,user){
+  if(!firebaseReady||!db)return false;
+  try{
+    const passwordHash=user.passwordHash||await hashPassword(user.password);
+    await db.collection('users').doc(String(role)).set({role:String(role),username:String(user.username||role),nama:String(user.nama||role),passwordHash,updatedAt:new Date().toISOString()},{merge:true});
+    return true;
+  }catch(e){console.error('saveCloudUser:',e);return false}
+}
+async function syncLocalUsersToCloud(){
+  if(!firebaseReady||!db)return false;
+  const users=getUsers(); let ok=true;
+  for(const role of ['admin','guru','siswa']){
+    if(!await saveCloudUser(role,users[role]))ok=false;
+  }
+  return ok;
+}
+function showLoginError(msg){const e=$('loginError');if(!e)return;e.textContent=msg||'';e.classList.toggle('show',!!msg)}
+function pilihLogin(role){currentRole=role;$('loginForm').classList.remove('hidden');$('username').value=role;$('password').value='';showLoginError('');const pw=$('password');if(pw){pw.type='password';const b=document.querySelector('.passwordToggle');if(b){b.textContent='👁️';b.setAttribute('aria-label','Tampilkan password');b.title='Tampilkan password'}}setTimeout(()=>{if(pw)pw.focus()},30)}
+function togglePasswordVisibility(id,btn){const el=$(id);if(!el||!btn)return;const show=el.type==='password';el.type=show?'text':'password';btn.textContent=show?'🙈':'👁️';btn.setAttribute('aria-label',show?'Sembunyikan password':'Tampilkan password');btn.title=show?'Sembunyikan password':'Tampilkan password';try{el.focus({preventScroll:true})}catch(_){el.focus()}}
+function setLoginLoading(show,text){const box=$('loginLoading'),tx=box?box.querySelector('.loginLoadingText'):null,btn=$('btnLogin');if(!box)return;if(tx&&text)tx.textContent=text;box.classList.toggle('hidden',!show);if(btn){btn.disabled=show;btn.textContent=show?'Memproses...':'Masuk';btn.setAttribute('aria-busy',show?'true':'false')}}
+function yieldToBrowser(){return new Promise(resolve=>{if(window.requestAnimationFrame)requestAnimationFrame(()=>setTimeout(resolve,30));else setTimeout(resolve,50)})}
+
+async function prosesLogin(){
+  const loading=$('loginLoading');
+  if(loading && !loading.classList.contains('hidden')) return;
+  const started=Date.now();
+  let success=false;
+  showLoginError('');
+  setLoginLoading(true,'Menyiapkan proses masuk...');
+  await yieldToBrowser();
+  try{
+    if(!currentRole){showLoginError('Silakan pilih jenis pengguna terlebih dahulu.');return}
+    const usernameEl=$('username'), passwordEl=$('password');
+    const username=usernameEl?usernameEl.value.trim():'';
+    const password=passwordEl?passwordEl.value:'';
+    if(!username || !password){
+      showLoginError('Username dan password wajib diisi.');
+      return;
+    }
+
+    setLoginLoading(true,'Menghubungkan ke sistem...');
+    await yieldToBrowser();
+    const firebaseOK=await initFirebase();
+    if(!firebaseOK){
+      showLoginError('Tidak dapat terhubung ke server. Periksa koneksi internet, lalu tekan Masuk lagi.');
+      return;
+    }
+
+    setLoginLoading(true,'Memverifikasi akun...');
+    await yieldToBrowser();
+    // Akun dibaca langsung dari Firebase. Tidak ada sinkronisasi akun otomatis saat login agar proses masuk tidak melakukan penulisan yang tidak perlu.
+    const cloudUser=await readCloudUser(currentRole);
+    if(cloudUser===null){
+      showLoginError('Akun belum dapat diverifikasi dari server. Periksa koneksi internet dan coba lagi.');
+      return;
+    }
+
+    const cloudHash=cloudUser.passwordHash||'';
+    let valid=false;
+    if(username===cloudUser.username){
+      if(cloudHash){
+        valid=(await hashPassword(password))===cloudHash;
+      }else{
+        valid=password===cloudUser.password;
+      }
+    }
+    if(!valid){
+      showLoginError('Username atau password salah. Silakan periksa kembali dan coba lagi.');
+      if(passwordEl){passwordEl.focus();passwordEl.select&&passwordEl.select();}
+      return;
+    }
+
+    const users=getUsers();
+    const localUser=users[currentRole]||{};
+    localUser.username=cloudUser.username||localUser.username||currentRole;
+    localUser.nama=cloudUser.nama||localUser.nama||currentRole;
+    users[currentRole]=localUser;
+    saveUsers(users);
+
+    setLoginLoading(true,'Memuat pengaturan dan kuis terbaru...');
+    await yieldToBrowser();
+    $('login').classList.add('hidden');
+    $('home').classList.remove('hidden');
+    const d=getUsers()[currentRole];
+    $('welcome').innerHTML=currentRole==='admin'?'':escapeHtml(d.nama);
+    await loadAppSettings();
+    applyRoleMenu();
+    if(currentRole==='siswa'){$('nama').value=d.nama;$('kelas').value='2'}
+    if(firebaseReady) await refreshCloudBank($('mapel').value,$('semester').value);
+    muatPeringkatSiswa();
+    success=true;
+  }catch(e){
+    console.error('prosesLogin:',e);
+    let msg='Proses masuk tidak dapat diselesaikan. Silakan coba lagi.';
+    if(e && e.code==='permission-denied') msg='Akses ke server ditolak. Silakan periksa pengaturan Firebase.';
+    else if(e && (e.code==='unavailable'||e.code==='deadline-exceeded')) msg='Server belum merespons. Periksa koneksi internet, lalu coba lagi.';
+    else if(e && /network|offline|failed to fetch/i.test(String(e.message||''))) msg='Koneksi internet bermasalah. Pastikan internet aktif, lalu coba lagi.';
+    showLoginError(msg);
+  }finally{
+    const elapsed=Date.now()-started;
+    const wait=Math.max(700-elapsed,0);
+    if(wait) await new Promise(r=>setTimeout(r,wait));
+    setLoginLoading(false);
+    if(!success){
+      const input=$('password');
+      if(input && currentRole) input.focus();
+    }
+  }
+}
+
+function logout(){location.reload()}
+function bukaAkunAdmin(){if(currentRole!=='admin'){alert('Menu ini hanya untuk Admin.');return}$('home').classList.add('hidden');$('kelola').classList.add('hidden');$('hasilGuru').classList.add('hidden');$('akunAdmin').classList.remove('hidden');$('akunTarget').value='guru';isiTargetAkun()}
+function isiTargetAkun(){let u=getUsers(),r=$('akunTarget').value;$('akunUsername').value=u[r].username;$('akunPasswordBaru').value='';$('akunPasswordUlang').value='';$('akunInfo').textContent='Akun '+r.toUpperCase()+' siap diubah.'}
+async function ubahPassword(){
+  if(currentRole!=='admin'){alert('Hanya Admin yang boleh mengubah password.');return}
+  let r=$('akunTarget').value,p1=$('akunPasswordBaru').value,p2=$('akunPasswordUlang').value;
+  if(p1.length<6){alert('Password minimal 6 karakter.');return}
+  if(p1!==p2){alert('Ulangan password tidak sama.');return}
+  let u=getUsers();u[r].password=p1;saveUsers(u);
+  $('akunPasswordBaru').value='';$('akunPasswordUlang').value='';
+  if(firebaseReady){
+    const ok=await saveCloudUser(r,u[r]);
+    if(!ok){$('akunInfo').textContent='⚠️ Password tersimpan di laptop, tetapi gagal disinkronkan ke Firebase.';alert('Password berubah di laptop, tetapi Firebase gagal menerima perubahan. Periksa koneksi Firebase.');return}
+    // Kirim juga akun lokal lain agar data akun tetap konsisten antarperangkat.
+    await syncLocalUsersToCloud();
+  }
+  $('akunInfo').textContent='✅ Password akun '+r.toUpperCase()+' berhasil diubah dan disinkronkan ke Firebase.';
+  alert('Password akun '+r.toUpperCase()+' berhasil diubah. Perangkat lain sekarang menggunakan password baru.');
+}
+$('akunTarget').addEventListener('change',isiTargetAkun)
+
+async function bukaHasilSaya(){
+  if(currentRole!=="siswa"||!canAccess('lihatNilaiSendiri')){alert("Hak akses Anda tidak mengizinkan melihat nilai sendiri.");return}
+  $("home").classList.add("hidden");$("kelola").classList.add("hidden");$("hasilGuru").classList.add("hidden");$("akunAdmin").classList.add("hidden");$("hasilSaya").classList.remove("hidden");
+  $("hasilSayaList").innerHTML='<p class="muted">🔄 Membaca nilai Anda dari Firebase Server...</p>';
+  const ok=await initFirebase();
+  if(!ok){$("hasilSayaList").innerHTML='<div class="tip">❌ Firebase tidak tersedia. Nilai Anda tidak dapat dibaca.</div>';return}
+  const username=String((getUsers()[currentRole]||{}).username||"");
+  try{
+    const snap=await db.collection("hasil_kuis").where("username","==",username).limit(200).get({source:"server"});
+    const data=[];snap.forEach(d=>data.push({id:d.id,...d.data()}));
+    data.sort((a,b)=>String(b.finished||"").localeCompare(String(a.finished||"")));
+    $("hasilSayaList").innerHTML=data.length?data.map((r,i)=>`<div class="resultitem"><b>${i+1}. ${escapeHtml(r.mapelNama||r.mapel||"-")}</b> • Semester ${escapeHtml(r.semester||"-")}<br><b>Nilai: ${escapeHtml(r.nilai??"-")}</b> (${escapeHtml(r.benar??0)}/20)<br><small>${r.finished?new Date(r.finished).toLocaleString("id-ID"):"-"}</small></div>`).join(""):'<p class="muted">Belum ada hasil kuis Anda.</p>';
+  }catch(e){
+    console.error("Gagal membaca nilai siswa:",e);
+    $("hasilSayaList").innerHTML='<div class="tip" style="background:#fef2f2;border-color:#fca5a5;color:#991b1b">❌ Nilai Anda tidak dapat dibaca dari Firebase.<br><small>'+escapeHtml(e.code||"")+' '+escapeHtml(e.message||"")+'</small></div>';
+  }
+}
+
+function tanggalLokalID(iso){
+  if(!iso)return '-';
+  const d=new Date(iso); if(isNaN(d.getTime()))return '-';
+  return d.toLocaleDateString('id-ID',{weekday:'long',day:'2-digit',month:'2-digit',year:'numeric'});
+}
+function kunciTanggalLokal(iso){
+  if(!iso)return '';
+  const d=new Date(iso); if(isNaN(d.getTime()))return '';
+  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+}
+function hitungPeringkatSiswa(data){
+  const groups={};
+  (data||[]).forEach(r=>{
+    const nama=String(r.nama||'').trim();
+    const nilai=Number(r.nilai);
+    if(!nama||!Number.isFinite(nilai))return;
+    if(!groups[nama])groups[nama]={nama,nilai:[],tertinggi:-Infinity};
+    groups[nama].nilai.push(nilai);
+    if(nilai>groups[nama].tertinggi)groups[nama].tertinggi=nilai;
+  });
+  return Object.values(groups).map(g=>({nama:g.nama,total:g.nilai.length,rata:g.nilai.reduce((a,b)=>a+b,0)/g.nilai.length,tertinggi:g.tertinggi}))
+    .sort((a,b)=>b.rata-a.rata||b.tertinggi-a.tertinggi||b.total-a.total||a.nama.localeCompare(b.nama,'id'));
+}
+
+function buatLaporanHasilSiswa(data){
+  const box=$("hasilList"); if(!box)return;
+  if(!data.length){box.innerHTML='<p class="muted">Belum ada hasil kuis siswa. Laporan mulai dari nol.</p>';return;}
+  window.__hasilSiswaRows=data.slice();
+  const todayKey=kunciTanggalLokal(new Date().toISOString());
+  const byStudent={};
+  data.forEach(r=>{
+    const nama=String(r.nama||'-').trim()||'-';
+    if(!byStudent[nama])byStudent[nama]=[];
+    byStudent[nama].push(r);
+  });
+  const ranking=hitungPeringkatSiswa(data);
+  const rankMap={}; ranking.forEach((r,i)=>{rankMap[r.nama]=i+1});
+  const students=ranking.map(r=>r.nama);
+  const th='style="padding:8px;border:1px solid #cbd5e1;background:#eff6ff;white-space:nowrap"';
+  const td='style="padding:8px;border:1px solid #e2e8f0;vertical-align:top"';
+
+  const studentRows=students.map((nama,i)=>{
+    const rows=byStudent[nama];
+    const today=rows.filter(r=>kunciTanggalLokal(r.finished)===todayKey).length;
+    const vals=rows.map(r=>Number(r.nilai)).filter(v=>Number.isFinite(v));
+    const avg=vals.length?(vals.reduce((a,b)=>a+b,0)/vals.length).toFixed(1):'-';
+    const mapels=[...new Set(rows.map(r=>String(r.mapelNama||r.mapel||'-')))].join(', ');
+    const encoded=encodeURIComponent(nama);
+    return '<tr><td '+td+'><b>#'+rankMap[nama]+'</b></td><td '+td+'><b>'+escapeHtml(nama)+'</b></td><td '+td+'>'+rows.length+'</td><td '+td+'>'+today+'</td><td '+td+escapeHtml(mapels)+'</td><td '+td+'><b>'+escapeHtml(avg)+'</b></td><td '+td+'><button type="button" onclick="lihatHasilPerSiswa(decodeURIComponent(\''+encoded+'\'))">👁️ Lihat Hasil</button></td></tr>';
+  }).join('');
+
+  const summary={};
+  data.forEach(r=>{
+    const nama=String(r.nama||'-').trim()||'-', key=nama+'|'+kunciTanggalLokal(r.finished);
+    if(!summary[key])summary[key]={nama,date:r.finished,count:0,mapel:new Set(),nilai:[]};
+    summary[key].count++;
+    summary[key].mapel.add(String(r.mapelNama||r.mapel||'-'));
+    if(r.nilai!==undefined&&r.nilai!==null&&r.nilai!=='')summary[key].nilai.push(Number(r.nilai));
+  });
+  const summaryRows=Object.values(summary).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+  const studentTotal={}; data.forEach(r=>{const n=String(r.nama||'-').trim()||'-';studentTotal[n]=(studentTotal[n]||0)+1;});
+  const todayCount={}; data.forEach(r=>{const n=String(r.nama||'-').trim()||'-';if(kunciTanggalLokal(r.finished)===todayKey)todayCount[n]=(todayCount[n]||0)+1;});
+  const summaryHtml=summaryRows.map((s,i)=>{
+    const avg=s.nilai.length?(s.nilai.reduce((a,b)=>a+b,0)/s.nilai.length).toFixed(1):'-';
+    const encoded=encodeURIComponent(s.nama);
+    return '<tr><td '+td+'><b>#'+rankMap[s.nama]+'</b></td><td '+td+'><b>'+escapeHtml(s.nama)+'</b></td><td '+td+'>'+tanggalLokalID(s.date)+'</td><td '+td+'><b>'+(todayCount[s.nama]||0)+'</b></td><td '+td+escapeHtml(Array.from(s.mapel).join(', '))+'</td><td '+td+escapeHtml(avg)+'</td><td '+td+'>'+studentTotal[s.nama]+'</td><td '+td+'><button type="button" onclick="lihatHasilPerSiswa(decodeURIComponent(\''+encoded+'\'))">👁️ Lihat</button></td></tr>';
+  }).join('');
+
+  box.innerHTML='<h3 style="margin:12px 0 8px">👨‍🎓 Daftar Siswa</h3><p class="muted" style="margin-top:0">Klik <b>Lihat Hasil</b> pada nama siswa untuk membuka seluruh riwayat pengerjaan siswa tersebut.</p><div style="overflow:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr><th '+th+'>Peringkat</th><th '+th+'>Nama Siswa</th><th '+th+'>Total Pengerjaan</th><th '+th+'>Hari Ini</th><th '+th+'>Pelajaran</th><th '+th+'>Rata-rata Nilai</th><th '+th+'>Aksi</th></tr></thead><tbody>'+studentRows+'</tbody></table></div><h3 style="margin:18px 0 8px">📅 Rekap Pengerjaan per Hari</h3><div style="overflow:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr><th '+th+'>Peringkat</th><th '+th+'>Nama Siswa</th><th '+th+'>Hari / Tanggal</th><th '+th+'>Hari Ini</th><th '+th+'>Pelajaran</th><th '+th+'>Rata-rata Nilai</th><th '+th+'>Total Pengerjaan</th><th '+th+'>Aksi</th></tr></thead><tbody>'+summaryHtml+'</tbody></table></div><div id="detailHasilSiswa" style="margin-top:18px"></div>';
+}
+
+function lihatHasilPerSiswa(nama){
+  const data=window.__hasilSiswaRows||[];
+  const rows=data.filter(r=>String(r.nama||'-').trim()===String(nama||'-').trim()).sort((a,b)=>String(b.finished||'').localeCompare(String(a.finished||'')));
+  const box=$("detailHasilSiswa"); if(!box)return;
+  if(!rows.length){box.innerHTML='<div class="tip">Data siswa tidak ditemukan.</div>';return;}
+  const nilai=rows.map(r=>Number(r.nilai)).filter(v=>Number.isFinite(v));
+  const avg=nilai.length?(nilai.reduce((a,b)=>a+b,0)/nilai.length).toFixed(1):'-';
+  const terbaik=nilai.length?Math.max(...nilai):'-';
+  const terendah=nilai.length?Math.min(...nilai):'-';
+  const mapels=[...new Set(rows.map(r=>String(r.mapelNama||r.mapel||'-')))];
+  const th='style="padding:8px;border:1px solid #cbd5e1;background:#f0fdf4;white-space:nowrap"';
+  const td='style="padding:8px;border:1px solid #e2e8f0;vertical-align:top"';
+  const detail=rows.map((r,i)=>{
+    const d=r.finished?new Date(r.finished):null;
+    const waktu=d&&!isNaN(d.getTime())?d.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit',second:'2-digit'}):'-';
+    return '<tr><td '+td+'>'+(i+1)+'</td><td '+td+'>'+escapeHtml(r.kelas||'-')+'</td><td '+td+'>'+escapeHtml(r.mapelNama||r.mapel||'-')+'</td><td '+td+'>'+escapeHtml(r.semester||'-')+'</td><td '+td+'>'+tanggalLokalID(r.finished)+'</td><td '+td+'>'+waktu+'</td><td '+td+'><b>'+escapeHtml(r.nilai??'-')+'</b></td><td '+td+'>'+escapeHtml(r.benar??0)+'/'+escapeHtml(r.total??20)+'</td></tr>';
+  }).join('');
+  box.innerHTML='<div class="tip" style="text-align:left;background:#f0fdf4;border-color:#86efac;color:#166534"><b>📋 Laporan Lengkap: '+escapeHtml(nama)+'</b><br><span style="font-weight:normal">Seluruh riwayat pengerjaan siswa ini ditampilkan dari yang terbaru.</span><div class="row" style="margin-top:10px"><button type="button">📊 Total: '+rows.length+' kali</button><button type="button">📚 Mapel: '+mapels.length+'</button><button type="button">⭐ Rata-rata: '+escapeHtml(avg)+'</button><button type="button">🏆 Tertinggi: '+escapeHtml(terbaik)+'</button><button type="button">📉 Terendah: '+escapeHtml(terendah)+'</button></div></div><div style="overflow:auto;margin-top:10px"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr><th '+th+'>No</th><th '+th+'>Kelas</th><th '+th+'>Pelajaran</th><th '+th+'>Semester</th><th '+th+'>Hari / Tanggal</th><th '+th+'>Jam</th><th '+th+'>Nilai</th><th '+th+'>Benar</th></tr></thead><tbody>'+detail+'</tbody></table></div><button type="button" class="gray" style="margin-top:10px" onclick="document.getElementById(\'detailHasilSiswa\').innerHTML=\'\';window.scrollTo({top:0,behavior:\'smooth\'})">✖ Tutup Rincian Siswa</button>';
+  box.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+async function muatPeringkatSiswa(){
+  const el=$("peringkatBerjalan"),banner=$("peringkatBanner");
+  if(!el)return;
+  try{
+    const ok=await initFirebase();
+    if(!ok)throw new Error('Firebase tidak tersedia');
+    const result=await loadResultsCloud();
+    if(!result.ok)throw new Error(result.message||result.code||'Gagal membaca hasil');
+    const ranking=hitungPeringkatSiswa(result.rows||[]).slice(0,3);
+    if(!ranking.length){
+      el.textContent='🏆 Belum ada data peringkat. Peringkat akan muncul setelah siswa mengerjakan kuis.';
+      banner.classList.add('empty');
+      return;
+    }
+    const medali=['🥇','🥈','🥉'];
+    el.innerHTML=ranking.map((r,i)=>'<span class="rankingBadge">'+medali[i]+' No. '+(i+1)+' <b>'+escapeHtml(r.nama)+'</b> — Rata-rata '+r.rata.toFixed(1)+'</span>').join('');
+    banner.classList.remove('empty');
+  }catch(e){
+    console.warn('Peringkat siswa tidak dapat dimuat:',e);
+    el.textContent='🏆 Peringkat siswa akan ditampilkan setelah data hasil tersedia.';
+    banner.classList.add('empty');
+  }
+}
+
+async function bukaHasilGuru(){
+  if(!canAccess('lihatHasil')){alert('Hak akses Anda tidak mengizinkan melihat nilai siswa.');return}
+  $("home").classList.add("hidden");$("kelola").classList.add("hidden");$("akunAdmin").classList.add("hidden");$("hasilGuru").classList.remove("hidden");
+  $("hasilList").innerHTML='<p class="muted">🔄 Membaca seluruh hasil siswa dari Firebase Server...</p>';
+  const ok=await initFirebase();
+  if(!ok){$("hasilList").innerHTML='<div class="tip">❌ Firebase tidak tersedia. Hasil siswa tidak dapat dibaca.</div>';return}
+  const result=await loadResultsCloud();
+  if(!result.ok){
+    $("hasilList").innerHTML='<div class="tip" style="background:#fef2f2;border-color:#fca5a5;color:#991b1b">❌ Hasil siswa tidak dapat dibaca dari Firebase.<br><small>'+escapeHtml(result.code||'')+' '+escapeHtml(result.message||'')+'</small></div>';
+    return;
+  }
+  buatLaporanHasilSiswa(result.rows||[]);
+}
+
+async function resetHasilSiswa(){
+  if(!canAccess('lihatHasil')){alert('Hak akses Anda tidak mengizinkan reset laporan hasil siswa.');return}
+  if(!confirm('Yakin ingin menghapus SEMUA laporan hasil/nilai siswa? Semua riwayat pengerjaan akan kembali dari nol. Bank soal, mata pelajaran, dan akun tidak ikut terhapus.'))return;
+  const btn=$("btnResetHasilSiswa"); if(btn){btn.disabled=true;btn.textContent='⏳ Menghapus laporan...';}
+  try{
+    const ok=await initFirebase();
+    if(!ok){alert('❌ Firebase tidak tersedia. Laporan belum dihapus.');return}
+    const snap=await db.collection('hasil_kuis').get({source:'server'});
+    const docs=[];snap.forEach(d=>docs.push(d.ref));
+    let deleted=0;
+    for(let i=0;i<docs.length;i+=450){
+      const batch=db.batch();
+      docs.slice(i,i+450).forEach(ref=>batch.delete(ref));
+      await batch.commit(); deleted+=Math.min(450,docs.length-i);
+    }
+    $("hasilList").innerHTML='<p class="muted">Laporan sudah kosong. Semua hasil siswa telah direset dan siap dimulai dari nol.</p>';
+    alert('✅ Reset laporan selesai. '+deleted+' hasil pengerjaan telah dihapus dari Firebase.');
+    muatPeringkatSiswa();
+  }catch(e){
+    console.error('Reset hasil siswa gagal:',e);
+    alert('❌ Reset laporan gagal: '+(e.code||e.message||e)+'. Periksa Rules Firestore agar Guru/Admin diizinkan menghapus dokumen hasil_kuis.');
+  }finally{
+    if(btn){btn.disabled=false;btn.textContent='🗑️ Reset Semua Laporan Hasil';}
+  }
+}
+
+
+function fillSubjects(){
+  ["mapel","addMapel"].forEach(id=>{
+    const el=$(id); if(!el)return;
+    const old=el.value; el.innerHTML="";
+    SUBJECTS.forEach(s=>{let o=document.createElement("option");o.value=s[1];o.textContent=s[0];el.appendChild(o)});
+    if(old&&hasSubject(old))el.value=old;
+    else if(hasSubject("matematika"))el.value="matematika";
+    else if(SUBJECTS[0])el.value=SUBJECTS[0][1];
+  });
+}
+fillSubjects();
+
+function hasSubject(id){return SUBJECTS.some(s=>String(s[1])===String(id))}
+function subjectName(id){const s=SUBJECTS.find(x=>String(x[1])===String(id));return s?s[0]:String(id||'Mapel')}
+function makeSubjectId(name){let base=String(name||'').trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'_').replace(/^_+|_+$/g,'').slice(0,40)||'mapel';let id=base,n=2;while(hasSubject(id)){id=base+'_'+n++;}return id}
+function fillManageSubjects(){const el=$('manageMapelSelect');if(!el)return;const current=el.value;el.innerHTML='';SUBJECTS.forEach(s=>{const o=document.createElement('option');o.value=s[1];o.textContent=s[0];el.appendChild(o)});if(current&&hasSubject(current))el.value=current;else if(SUBJECTS[0])el.value=SUBJECTS[0][1];const s=SUBJECTS.find(x=>x[1]===el.value);if(s)$('manageMapelName').value=s[0]}
+function renderRekapBank(rows){const box=$('rekapBankList');if(!box)return;const counts={};SUBJECTS.forEach(s=>counts[s[1]]={name:s[0],total:0,s1:0,s2:0});(rows||[]).forEach(x=>{const id=normalizeSubject(x.mapel);if(!counts[id])counts[id]={name:subjectName(id),total:0,s1:0,s2:0};counts[id].total++;if(Number(x.semester)===1)counts[id].s1++;if(Number(x.semester)===2)counts[id].s2++});box.innerHTML=Object.keys(counts).map((id,i)=>{const c=counts[id];return '<div class="resultitem"><b>'+(i+1)+'. '+escapeHtml(c.name)+'</b><br><span>📚 Total: <b>'+c.total+'</b> soal</span> &nbsp;•&nbsp; Semester 1: <b>'+c.s1+'</b> &nbsp;•&nbsp; Semester 2: <b>'+c.s2+'</b></div>'}).join('')||'<p class="muted">Belum ada mata pelajaran.</p>'}
+async function toggleRekapBank(){
+  if(!canAccess('lihatRekapBank')){alert('Hak akses Anda tidak mengizinkan melihat rekap bank soal.');return}
+  const bankPanel=$('bankPanel'), rekap=$('rekapBankPanel'), bankList=$('bankList'), bankInfo=$('bankInfo'), mapelPanel=$('kelolaMapelPanel');
+  if(!bankPanel||!rekap)return;
+  const opening=rekap.classList.contains('hidden');
+  bankPanel.classList.remove('hidden');
+  if(opening){
+    rekap.classList.remove('hidden');
+    if(bankList)bankList.classList.add('hidden');
+    if(bankInfo)bankInfo.classList.add('hidden');
+    if(mapelPanel)mapelPanel.classList.add('hidden');
+    rekap.scrollIntoView({behavior:'smooth',block:'start'});
+    await refreshRekapBank();
+  }else{
+    rekap.classList.add('hidden');
+    if(bankList)bankList.classList.remove('hidden');
+    if(bankInfo)bankInfo.classList.remove('hidden');
+  }
+}
+async function refreshRekapBank(){if(!canAccess('lihatRekapBank'))return;const status=$('rekapBankStatus');if(status)status.textContent='🔄 Membaca seluruh bank soal dari Firebase Server...';const ok=await initFirebase();if(!ok){if(status)status.textContent='❌ Firebase tidak tersedia.';return}const result=await readBankFromServer();if(!result){if(status)status.textContent='❌ Bank soal tidak dapat dibaca dari Firebase.';return}renderRekapBank(result.rows);if(status)status.textContent='☁️ Rekap diperbarui dari Firebase Server • '+result.validCount+' soal aktif.'}
+function toggleKelolaMapel(){if(!canAccess('kelolaMapel')){alert('Hak akses Anda tidak mengizinkan pengelolaan mata pelajaran.');return}const bankPanel=$('bankPanel');if(bankPanel)bankPanel.classList.remove('hidden');const p=$('kelolaMapelPanel');if(!p)return;p.classList.toggle('hidden');if(!p.classList.contains('hidden'))fillManageSubjects()}
+async function saveSubjectsToFirebase(){if(currentRole!=='admin'&&!canAccess('kelolaMapel'))return false;const ok=await initFirebase();if(!ok)return false;try{const subjects=Array.isArray(SUBJECTS)?SUBJECTS.map(v=>({name:String(v&&v[0]||''),id:String(v&&v[1]||'')})).filter(v=>v.name&&v.id):[];await db.collection('app_settings').doc('general').set({subjects,updatedAt:new Date().toISOString(),updatedBy:'admin'},{merge:true});appSettings.subjects=JSON.parse(JSON.stringify(SUBJECTS));fillSubjects();fillManageSubjects();return true}catch(e){console.error('saveSubjectsToFirebase',e);alert('❌ Daftar mata pelajaran gagal disimpan ke Firebase: '+(e.code||e.message||e));return false}}
+async function tambahMapelFirebase(){if(!canAccess('kelolaMapel')){alert('Hak akses tidak mengizinkan penambahan mapel.');return}const name=$('manageMapelName').value.trim();if(!name){alert('Nama mapel wajib diisi.');return}if(SUBJECTS.some(s=>s[0].trim().toLowerCase()===name.toLowerCase())){alert('Nama mapel tersebut sudah ada.');return}SUBJECTS.push([name,makeSubjectId(name)]);if(await saveSubjectsToFirebase()){fillManageSubjects();alert('✅ Mapel "'+name+'" berhasil ditambahkan dan disinkronkan ke Firebase.')}}
+async function ubahMapelFirebase(){if(!canAccess('kelolaMapel')){alert('Hak akses tidak mengizinkan perubahan mapel.');return}const id=$('manageMapelSelect').value,name=$('manageMapelName').value.trim();if(!id||!name){alert('Pilih mapel dan isi nama baru.');return}if(SUBJECTS.some(s=>s[0].trim().toLowerCase()===name.toLowerCase()&&s[1]!==id)){alert('Nama mapel tersebut sudah digunakan.');return}const s=SUBJECTS.find(x=>x[1]===id);if(!s)return;s[0]=name;if(await saveSubjectsToFirebase()){fillSubjects();fillManageSubjects();await refreshRekapBank();alert('✅ Nama mapel berhasil diubah. Bank soal tetap terhubung karena kode mapelnya tidak berubah.')}}
+async function hapusMapelFirebase(){if(!canAccess('kelolaMapel')){alert('Hak akses tidak mengizinkan penghapusan mapel.');return}const id=$('manageMapelSelect').value;if(!id)return;const s=SUBJECTS.find(x=>x[1]===id);if(!s)return;if(!confirm('Hapus mapel "'+s[0]+'" dari daftar pilihan? Bank soal lama tetap tersimpan di Firebase, tetapi mapel tidak lagi tampil di pilihan.'))return;SUBJECTS=SUBJECTS.filter(x=>x[1]!==id);if(!SUBJECTS.length){alert('Minimal harus ada satu mapel.');SUBJECTS=JSON.parse(JSON.stringify(DEFAULT_SUBJECTS));return}if(await saveSubjectsToFirebase()){fillManageSubjects();await refreshRekapBank();alert('✅ Mapel "'+s[0]+'" berhasil dihapus dari daftar dan perubahan tersinkron ke Firebase.')}}
+
+// Pengacak soal. Dibutuhkan saat MULAI KUIS untuk mengacak 20 soal dari Firebase.
+function shuffle(arr){
+  const a=Array.isArray(arr)?arr.slice():[];
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+
+function getBank(subject,semester){
+  // ONLINE ONLY: bank soal hanya berasal dari hasil Firebase yang sedang ada di RAM.
+  if(String(subject)===String(onlineBankSubject) && String(semester)===String(onlineBankSemester)) return onlineBank.slice();
+  return [];
+}
+
+async function mulai(){
+  if(currentRole!=='admin'&&!canAccess('kerjakanKuis')){alert('Hak akses Anda tidak mengizinkan mengerjakan kuis.');return}
+  const nama=$("nama").value.trim(), kelas=$("kelas").value.trim(), alamat=$("alamat").value.trim(), semester=$("semester").value, subject=$("mapel").value;
+  const btn=document.querySelector('#home button[onclick="mulai()"]');
+  if(!nama||!kelas){alert("Nama siswa dan kelas wajib diisi.");return}
+  if(btn){btn.disabled=true;btn.textContent="⏳ MEMULAI KUIS..."}
+  try{
+    setFirebaseStatus("🔄 Menyiapkan 20 soal dari Firebase Server...",false);
+    const ok=await initFirebase();
+    if(!ok){alert("❌ Firebase tidak tersedia. MODE ONLINE SAJA: kuis tidak dapat dimulai dari data perangkat.");return}
+
+    // Jika bank untuk mapel/semester ini sudah berhasil dibaca saat login atau sinkronisasi,
+    // gunakan data RAM tersebut agar tombol MULAI KUIS tidak menunggu pembacaan Firebase kedua kali.
+    let bank=null;
+    if(String(onlineBankSubject)===String(subject) &&
+       String(onlineBankSemester)===String(semester) &&
+       Array.isArray(onlineBank) && onlineBank.length>=20){
+      bank=onlineBank.slice();
+      setFirebaseStatus("☁️ 20 soal siap dari Firebase Server. Memulai kuis...",true);
+    }else{
+      bank=await refreshCloudBank(subject,semester);
+      if(bank===null){alert("❌ Bank soal Firebase tidak dapat dibaca dari SERVER. Periksa internet dan Rules Firestore.");return}
+    }
+
+    if(bank.length<20){
+      alert("Bank soal "+(SUBJECTS.find(x=>x[1]===subject)||[subject])[0]+" Semester "+semester+" baru memiliki "+bank.length+" soal di FIREBASE SERVER. Minimal 20 soal diperlukan.");
+      return;
+    }
+
+    student={nama,kelas,alamat,semester,mapel:subject,mapelNama:SUBJECTS.find(x=>x[1]===subject)[0],username:String((getUsers()[currentRole]||{}).username||""),started:new Date().toISOString()};
+    qs=shuffle(bank).slice(0,20); ans=Array(20).fill(null); idx=0;
+    if(new Set(qs.map(x=>x.id)).size!==20){alert("Soal ganda terdeteksi di Firebase. Periksa ID/kode soal.");return}
+    $("info").textContent=nama+" • Kelas "+kelas+" • "+student.mapelNama+" • Semester "+semester+" • ☁️ ONLINE";
+    $("quiz").classList.remove("hidden");$("home").classList.add("hidden");$("kelola").classList.add("hidden");render();
+  }finally{
+    if(btn){btn.disabled=false;btn.textContent="🚀 MULAI KUIS"}
+  }
+}
+
+function render(){
+  let q=qs[idx];$("count").textContent=(idx+1)+" / 20";$("prog").style.width=((idx+1)*5)+"%";
+  $("box").innerHTML="<div class='q'>"+(idx+1)+". "+escapeHtml(q.q)+"</div>";
+  q.o.forEach((v,i)=>{
+    let l="ABCD"[i],b=document.createElement("button");
+    b.className="opt"+(ans[idx]===l?" sel":"");
+    b.innerHTML="<input type='radio' "+(ans[idx]===l?"checked":"")+"> <b>"+l+".</b> "+escapeHtml(v);
+    b.onclick=()=>{ans[idx]=l;render()}; $("box").appendChild(b);
+  });
+  $("nums").innerHTML="";
+  for(let i=0;i<20;i++){let b=document.createElement("button");b.textContent=i+1;b.className=(ans[i]?"done ":"")+(i===idx?"cur":"");b.onclick=()=>{idx=i;render()};$("nums").appendChild(b)}
+}
+function prev(){if(idx>0){idx--;render()}}
+function next(){if(idx<19){idx++;render()}}
+
+function batalkanKuis(){
+  if(!confirm("Batalkan kuis ini? Jawaban yang sudah diisi akan dibuang dan kuis ini TIDAK akan menghasilkan nilai atau tersimpan sebagai hasil siswa."))return;
+  qs=[];
+  ans=[];
+  idx=0;
+  student={};
+  $("quiz").classList.add("hidden");
+  $("hasil").classList.add("hidden");
+  $("home").classList.remove("hidden");
+  applyRoleMenu();
+  muatPeringkatSiswa();
+  alert("✅ Kuis dibatalkan. Tidak ada nilai yang disimpan untuk kuis ini.");
+}
+
+async function selesai(){
+  if(ans.some(x=>!x)&&!confirm("Masih ada soal yang belum dijawab. Kumpulkan sekarang?"))return;
+  let benar=ans.reduce((n,a,i)=>n+(a===qs[i].a?1:0),0), nilai=benar*5;
+  let hasil={...student,benar,total:20,nilai,finished:new Date().toISOString(),questionIds:qs.map(x=>x.id)};
+  const saveBox=$("hasilSaveStatus");
+  $("quiz").classList.add("hidden");$("hasil").classList.remove("hidden");
+  $("nilai").textContent=nilai;
+  $("detail").innerHTML="Benar <b>"+benar+"</b> dari 20 soal.<br>Nama: "+escapeHtml(student.nama)+"<br>"+escapeHtml(student.mapelNama)+" • Semester "+student.semester;
+  if(saveBox){saveBox.textContent="☁️ Menyimpan hasil ke Firebase Server...";saveBox.style.display="block";}
+  const ok=await initFirebase();
+  if(!ok){if(saveBox)saveBox.textContent="⚠️ Nilai sudah dihitung, tetapi Firebase tidak tersedia sehingga hasil belum tersimpan online.";return}
+  const saved=await saveResultCloud(hasil);
+  if(saveBox)saveBox.textContent=saved.ok?"☁️ Hasil siswa berhasil tersimpan di Firebase Server.":"⚠️ Nilai sudah dihitung, tetapi hasil belum tersimpan online. "+(saved.code||saved.message||"");
+  if(saved.ok)muatPeringkatSiswa();
+}
+
+async function bukaKelola(){if(!canAccess('kelolaSoal')){alert('Hak akses Anda tidak mengizinkan pengelolaan soal.');return}
+  $("home").classList.add("hidden");$("hasil").classList.add("hidden");$("quiz").classList.add("hidden");$("kelola").classList.remove("hidden");
+  await refreshAndShowBank();
+}
+function kembaliHome(){$('kelola').classList.add('hidden');$('hasilGuru').classList.add('hidden');$('hasilSaya').classList.add('hidden');$('akunAdmin').classList.add('hidden');$('pengaturanAdmin').classList.add('hidden');$('hasil').classList.add('hidden');$('quiz').classList.add('hidden');$('home').classList.remove('hidden');applyRoleMenu();muatPeringkatSiswa()}
+function resetFormSoal(){$("editSoalId").value="";$("addQ").value="";["addA","addB","addC","addD"].forEach(x=>$(x).value="");$("addKey").value="A";$("btnSimpanSoal").textContent="💾 Simpan Soal";$("btnBatalEdit").classList.add("hidden")}
+function batalEditSoal(){resetFormSoal()}
+function normalizeQuestionText(v){return String(v||"").replace(/\s+/g," ").trim().toLowerCase()}
+async function getFreshBankForSave(subject,semester){
+  const ok=await initFirebase();
+  if(!ok)return {bank:[],cloud:[],ok:false};
+  const cloud=await refreshCloudBank(subject,semester);
+  return {bank:cloud||[],cloud:cloud||[],ok:cloud!==null};
+}
+function toggleBulkSoal(){
+  const panel=$("bulkSoalPanel");
+  if(!panel)return;
+  panel.classList.toggle("hidden");
+  if(!panel.classList.contains("hidden"))$("bulkSoalText").focus();
+}
+function clearBulkSoal(){
+  $("bulkSoalText").value="";
+  $("bulkProgress").textContent="";
+}
+function parseBulkSoalText(text){
+  const lines=String(text||"").split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
+  const rows=[],errors=[];
+  lines.forEach((line,i)=>{
+    const parts=line.split("||").map(x=>x.trim());
+    if(parts.length!==6){errors.push("Baris "+(i+1)+": harus memiliki 6 bagian dipisahkan ||");return}
+    const [q,A,B,C,D,key]=parts;
+    if(!q||!A||!B||!C||!D||!key){errors.push("Baris "+(i+1)+": ada bagian yang kosong");return}
+    const k=key.toUpperCase();
+    if(!["A","B","C","D"].includes(k)){errors.push("Baris "+(i+1)+": kunci harus A, B, C, atau D");return}
+    rows.push({line:i+1,q,o:[A,B,C,D],a:k});
+  });
+  return {rows,errors};
+}
+async function simpanBanyakSoal(){
+  if(currentRole!=="guru"&&currentRole!=="admin"){alert("Akses hanya untuk Guru/Admin.");return}
+  const subject=$("addMapel").value,semester=$("addSemester").value,progress=$("bulkProgress");
+  const parsed=parseBulkSoalText($("bulkSoalText").value);
+  if(!parsed.rows.length){progress.textContent="❌ Belum ada soal yang valid untuk disimpan."+(parsed.errors.length?"\n"+parsed.errors.join("\n"):"");return}
+  if(parsed.errors.length){progress.textContent="❌ Periksa format berikut sebelum menyimpan:\n"+parsed.errors.join("\n");return}
+  if(!confirm("Simpan "+parsed.rows.length+" soal ke Firebase?\n\nMapel: "+subject+"\nSemester: "+semester))return
+  const btn=$("btnSimpanBanyak");btn.disabled=true;btn.textContent="⏳ Menyimpan...";progress.textContent="🔄 Membaca bank soal terbaru dari Firebase Server...";
+  try{
+    const fresh=await getFreshBankForSave(subject,semester);
+    if(!fresh.ok)throw new Error("Firebase Server tidak dapat dibaca.");
+    const existingTexts=new Set(fresh.bank.map(x=>normalizeQuestionText(x.q)));
+    const batchSeen=new Set(),valid=[],skipped=[];
+    parsed.rows.forEach(r=>{const nq=normalizeQuestionText(r.q);if(existingTexts.has(nq)||batchSeen.has(nq)){skipped.push("Baris "+r.line+": soal sama/duplikat - "+r.q);return}batchSeen.add(nq);valid.push(r)});
+    if(!valid.length){progress.textContent="⚠️ Tidak ada soal baru. Semua soal sudah ada/duplikat."+(skipped.length?"\n\n"+skipped.join("\n"):"");return}
+    let saved=0,failed=0;const startCount=fresh.bank.length;
+    for(let i=0;i<valid.length;i++){const r=valid[i],id="ONLINE-"+normalizeSubject(subject)+"-S"+semester+"-"+Date.now()+"-"+(i+1),q={id,kode:id,q:r.q,o:r.o,a:r.a};progress.textContent="☁️ Menyimpan soal "+(i+1)+" dari "+valid.length+"...\n"+r.q;try{const ok=await saveQuestionCloud(subject,semester,q);if(ok)saved++;else failed++}catch(e){failed++;console.error(e)}}
+    const afterCount=(await refreshCloudBank(subject,semester))||[];await refreshAndShowBank();
+    progress.textContent=(saved===valid.length?"✅":"⚠️")+" Proses penambahan soal selesai.\n\nMapel: "+subject+"\nSemester: "+semester+"\nBank sebelum: "+startCount+" soal\nSoal baru tersimpan: "+saved+"\nGagal disimpan: "+failed+"\nDuplikat dilewati: "+skipped.length+"\nBank sekarang: "+afterCount.length+(skipped.length?"\n\nSOAL YANG DILEWATI:\n"+skipped.join("\n"):"");
+    if(saved>0)$("bulkSoalText").value="";
+  }catch(e){console.error(e);progress.textContent="❌ Gagal menambahkan soal ke Firebase.\n"+(e.code||"")+" "+(e.message||e)}finally{btn.disabled=false;btn.textContent="☁️ Simpan Semua ke Firebase"}
+}
+
+async function simpanSoal(){
+  if(currentRole!=="guru"&&currentRole!=="admin"){alert("Akses hanya untuk Guru/Admin.");return}
+  const semester=$("addSemester").value,subject=$("addMapel").value,q=$("addQ").value.trim(),opts=[$("addA").value.trim(),$("addB").value.trim(),$("addC").value.trim(),$("addD").value.trim()],key=$("addKey").value,editId=$("editSoalId").value;
+  if(!q||opts.some(x=>!x)){alert("Pertanyaan dan keempat pilihan jawaban wajib diisi.");return}
+  const fresh=await getFreshBankForSave(subject,semester);
+  if(!fresh.ok){alert("❌ Firebase SERVER tidak dapat dibaca. Soal tidak disimpan ke perangkat.");return}
+  const duplicate=fresh.bank.find(x=>String(x.id)!==String(editId)&&normalizeQuestionText(x.q)===normalizeQuestionText(q));
+  if(duplicate){alert("Pertanyaan yang sama sudah ada di Firebase.\n\nSoal: "+String(duplicate.q||""));return}
+  if(editId){
+    const existing=fresh.bank.find(x=>String(x.id)===String(editId));
+    if(!existing){alert("Soal Firebase tidak ditemukan.");return}
+    const updated={id:existing.id,q,o:opts,a:key,_docId:existing._docId,kode:existing.kode};
+    const ok=await saveQuestionCloud(subject,semester,updated);
+    if(ok){await refreshCloudBank(subject,semester);resetFormSoal();await refreshAndShowBank();alert("✅ Soal Firebase berhasil diperbarui.")}
+    return;
+  }
+  const id="ONLINE-"+normalizeSubject(subject)+"-S"+semester+"-"+Date.now();
+  const freshQuestion={id,q,o:opts,a:key,kode:id};
+  const docId=cloudQuestionKey(subject,semester,id);
+  const ok=await saveQuestionCloud(subject,semester,freshQuestion);
+  if(ok){
+    const ver=await verifySavedQuestionCloud(docId,subject,semester);
+    await refreshCloudBank(subject,semester);resetFormSoal();await refreshAndShowBank();
+    if(ver.ok){
+      alert("✅ Soal berhasil disimpan\n\nSoal tersimpan di Firebase Server.\nMapel: "+ver.mapel+"\nSemester: "+ver.semester+"\nAktif: YA\n\nSoal sudah tersimpan di Firebase Server dengan mapel dan semester yang benar.");
+    }else{
+      alert("⚠️ Soal sudah dikirim, tetapi verifikasi pembacaan ulang belum cocok.\n\nMapel terbaca: "+(ver.mapel||"-")+"\nSemester terbaca: "+(ver.semester||"-")+"\nPesan: "+(ver.message||"data tidak cocok"));
+    }
+  }
+}
+function editSoal(id){if(currentRole!=="guru"&&currentRole!=="admin")return;let subject=$("addMapel").value,semester=$("addSemester").value,x=findBankQuestion(subject,semester,id);if(!x){alert("Soal tidak ditemukan.");return}$("editSoalId").value=x.id;$("addQ").value=x.q;$("addA").value=x.o[0];$("addB").value=x.o[1];$("addC").value=x.o[2];$("addD").value=x.o[3];$("addKey").value=x.a;$("btnSimpanSoal").textContent="💾 Update Soal";$("btnBatalEdit").classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})}
+async function tesFirebaseBank(){
+  if(currentRole!=="guru"&&currentRole!=="admin")return;
+  const subject=$("addMapel").value, semester=$("addSemester").value;
+  const box=$("firebaseTestResult");
+  if(box){
+    box.style.display="block"; box.style.background="#eff6ff";
+    box.style.borderColor="#93c5fd"; box.style.color="#1e3a8a";
+    box.textContent="🔄 Menghubungkan ke Firebase Server...";
+  }
+  try{
+    const ok=await initFirebase();
+    if(!ok){
+      if(box)box.textContent="❌ Firebase SDK belum siap.";
+      return;
+    }
+    const result=await readBankFromServer();
+    if(!result){
+      if(box){
+        box.style.background="#fef2f2";box.style.borderColor="#fca5a5";box.style.color="#991b1b";
+        box.textContent="❌ FIREBASE SERVER TIDAK DAPAT DIBACA.\n\n"+
+          "Tes dihentikan otomatis jika server tidak merespons 12 detik.\n"+
+          "Tidak ada proses menunggu realtime tanpa batas.";
+      }
+      return;
+    }
+    onlineBank=filterOnlineBank(subject,semester);
+    onlineBankSubject=subject; onlineBankSemester=String(semester);
+    startBankRealtime();
+    if(box){
+      box.style.background="#ecfdf5";box.style.borderColor="#86efac";box.style.color="#166534";
+      box.textContent="🔎 HASIL TES FIREBASE SERVER\n\n"+
+        "Mapel: "+subject+"\nSemester: "+semester+
+        "\nDokumen aktif diterima: "+result.rawCount+
+        "\nSoal valid: "+result.validCount+
+        "\nSoal tidak valid: "+result.invalidCount+
+        "\nSoal valid untuk pilihan ini: "+onlineBank.length+
+        "\n\nDATA ASLI MAPEL/SEMESTER DARI FIREBASE:\n"+
+        onlineBankAll.slice(0,10).map((x,i)=>(i+1)+". ID: "+x._docId+" | mapel: ["+x.mapel+"] | semester: ["+x.semester+"] | normalisasi: ["+normalizeSubject(x.mapel)+"] / ["+Number(x.semester)+"]").join("\n")+
+        "\n\n"+(onlineBank.length?onlineBank.slice(0,4).map((x,i)=>(i+1)+". "+x.q).join("\n"):
+        "Tidak ada soal valid untuk pilihan ini.");
+    }
+  }catch(e){
+    console.error(e);
+    if(box){
+      box.style.background="#fef2f2";box.style.borderColor="#fca5a5";box.style.color="#991b1b";
+      box.textContent="❌ Error Firebase\n"+(e.code||"")+"\n"+(e.message||e);
+    }
+  }
+}
+
+async function refreshAndShowBank(){
+  const subject=$("addMapel").value, semester=$("addSemester").value;
+  await initFirebase();
+  const rows=await refreshCloudBank(subject,semester);
+  // Render hasil server langsung; tidak melalui getBank/local cache.
+  if(rows!==null) lihatBank(rows);
+  else lihatBank([]);
+  return rows;
+}
+async function refreshBankOnSelection(){
+  if(currentRole!=="guru"&&currentRole!=="admin")return;
+  await refreshAndShowBank();
+  if($('rekapBankPanel')&&!$('rekapBankPanel').classList.contains('hidden'))await refreshRekapBank();
+}
+["addMapel","addSemester"].forEach(id=>{
+  const el=$(id);
+  if(el) el.addEventListener("change",refreshBankOnSelection);
+});
+document.addEventListener("visibilitychange",async function(){if(document.visibilityState!=="visible")return;if(currentRole!=="guru"&&currentRole!=="admin")return;if($("kelola")&&!$("kelola").classList.contains("hidden"))await refreshAndShowBank()});
+window.addEventListener("online",async function(){if(currentRole!=="guru"&&currentRole!=="admin")return;if($("kelola")&&!$("kelola").classList.contains("hidden"))await refreshAndShowBank()});
+async function toggleBankSoal(){if(currentRole!=="guru"&&currentRole!=="admin"){alert("Akses hanya untuk Guru/Admin.");return}let p=$("bankPanel"),b=$("btnLihatBank");if(p.classList.contains("hidden")){await refreshAndShowBank();p.classList.remove("hidden");b.textContent="📕 Sembunyikan Bank Soal"}else{p.classList.add("hidden");b.textContent="📚 Lihat Bank Soal"}}
+function lihatBank(bankOverride){
+  if(currentRole!=="guru"&&currentRole!=="admin")return;
+  let subject=$("addMapel").value,semester=$("addSemester").value,bank=Array.isArray(bankOverride)?bankOverride:onlineBank,name=(SUBJECTS.find(x=>x[1]===subject)||["Mapel"])[0];
+  $("bankInfo").innerHTML="Bank <b>"+escapeHtml(name)+"</b> Semester "+escapeHtml(semester)+": <b>"+bank.length+" soal</b> • sumber: <b>Firebase Server</b>";
+  $("bankList").innerHTML=bank.length?bank.map((x,i)=>{
+    let c=true;
+    let jenis="☁️ Firebase Server";
+    let safeId=String(x.id).replace(/\\/g,"\\\\").replace(/'/g,"\\'");
+    let tombol=c?`<br><button class="gray" onclick="editSoal('${safeId}')">✏️ Edit Soal</button> <button class="danger" onclick="hapusSoal('${safeId}')">🗑️ Hapus Soal</button>`:"";
+    return '<div class="bankitem"><b>'+(i+1)+'.</b> '+escapeHtml(x.q)+'<br><small>Pilihan: A. '+escapeHtml(x.o[0])+' | B. '+escapeHtml(x.o[1])+' | C. '+escapeHtml(x.o[2])+' | D. '+escapeHtml(x.o[3])+'</small><br><small>Kunci: '+escapeHtml(x.a)+' • '+jenis+'</small>'+tombol+'</div>'
+  }).join(""):'<p class=\"muted\">Belum ada soal pada bank ini.</p>';
+}
+
+function findBankQuestion(subject,semester,id){
+  return onlineBank.find(x=>String(x.id)===String(id))||null;
+}
+async function resetSoalMapel(){
+  if(currentRole!=="guru"&&currentRole!=="admin"){
+    alert("Akses hanya untuk Guru/Admin.");
+    return;
+  }
+  if(!canAccess("kelolaSoal")){
+    alert("Hak akses Anda tidak mengizinkan reset soal.");
+    return;
+  }
+  const subjectId=$("addMapel").value;
+  const subjectNameValue=subjectName(subjectId);
+  if(!subjectId){alert("Pilih mata pelajaran terlebih dahulu.");return}
+  const konfirmasi=confirm(
+    "RESET SOAL MATA PELAJARAN\n\n"+
+    "Mata pelajaran: "+subjectNameValue+"\n"+
+    "Semester: 1 dan Semester 2\n\n"+
+    "Semua soal AKTIF pada mata pelajaran ini akan dinonaktifkan dari bank soal.\n"+
+    "Mata pelajaran lain, akun, dan hasil siswa TIDAK ikut terhapus.\n\n"+
+    "Lanjutkan?"
+  );
+  if(!konfirmasi)return;
+
+  const btn=$("btnResetSoalMapel");
+  if(btn){btn.disabled=true;btn.textContent="⏳ Mereset soal..."}
+  try{
+    const ok=await initFirebase();
+    if(!ok){alert("❌ Firebase tidak tersedia. Reset dibatalkan.");return}
+    const snap=await db.collection("bank_soal").where("aktif","==",true).get({source:"server"});
+    const targets=[];
+    snap.forEach(doc=>{
+      const x=doc.data()||{};
+      const mapel=String(x.mapel??x.mataPelajaran??x.subject??"");
+      if(normalizeSubject(mapel)===normalizeSubject(subjectId) || normalizeSubject(mapel)===normalizeSubject(subjectNameValue)){
+        targets.push(doc.ref);
+      }
+    });
+    if(!targets.length){
+      await refreshAndShowBank();
+      alert("ℹ️ Tidak ada soal aktif pada mata pelajaran "+subjectNameValue+".");
+      return;
+    }
+    let done=0;
+    for(let i=0;i<targets.length;i+=450){
+      const batch=db.batch();
+      targets.slice(i,i+450).forEach(ref=>batch.update(ref,{aktif:false,active:false,updatedAt:new Date().toISOString(),updatedBy:currentRole||"unknown",resetByMapel:true}));
+      await batch.commit();
+      done+=Math.min(450,targets.length-i);
+    }
+    onlineBankAll=onlineBankAll.filter(x=>normalizeSubject(x.mapel)!==normalizeSubject(subjectId) && normalizeSubject(x.mapel)!==normalizeSubject(subjectNameValue));
+    onlineBank=filterOnlineBank(subjectId,$("addSemester").value);
+    await refreshAndShowBank();
+    await refreshRekapBank();
+    alert("✅ Reset soal berhasil.\n\nMata pelajaran: "+subjectNameValue+"\nSoal yang dinonaktifkan: "+done+"\nSemester: 1 dan 2\n\nMapel lain tetap aman.");
+  }catch(e){
+    console.error("resetSoalMapel:",e);
+    alert("❌ Reset soal gagal.\n\n"+(e.code||e.message||e)+"\n\nPeriksa koneksi dan Rules Firebase.");
+  }finally{
+    if(btn){btn.disabled=false;btn.textContent="🗑️ Reset Semua Soal Mapel Ini"}
+  }
+}
+
+async function hapusSoal(id){
+  if(currentRole!=="guru"&&currentRole!=="admin")return;
+  const subject=$("addMapel").value,semester=$("addSemester").value;
+  const x=findBankQuestion(subject,semester,id);
+  if(!x){alert("Soal Firebase tidak ditemukan. Silakan sinkronkan ulang.");return}
+  if(!confirm("Nonaktifkan soal ini di Firebase?"))return;
+  const ok=await deleteQuestionCloud(subject,semester,x);
+  if(!ok)return;
+  await refreshAndShowBank();
+  if($("editSoalId").value===id)resetFormSoal();
+}
+
+$("addMapel").addEventListener("change",lihatBank);$("addSemester").addEventListener("change",lihatBank);
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+
+// Muat pengaturan tampilan sejak halaman pertama dibuka, sebelum pengguna login.
+// Dengan demikian logo dan nama MI yang diatur Admin langsung tampil di layar awal/login.
+window.addEventListener('DOMContentLoaded',()=>{
+  loadAppSettings().catch(e=>console.warn('Pengaturan awal belum dapat dimuat:',e));
+});
+</script></body></html>
