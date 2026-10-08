@@ -29,15 +29,50 @@ jobs:
       - name: Copy web assets
         run: npx cap copy android
 
-      - name: Replace app icons with MI logo
+      - name: Install Pillow for icon generation
+        run: pip install Pillow
+
+      - name: Generate and Replace app icons with MI logo
         run: |
-          if [ -d "app-icons" ]; then
-            for dir in app-icons/mipmap-*; do
-              base=$(basename $dir)
-              cp $dir/ic_launcher.png android/app/src/main/res/$base/ic_launcher.png || true
-              cp $dir/ic_launcher_round.png android/app/src/main/res/$base/ic_launcher_round.png || true
-            done
-          fi
+          python3 << 'PY'
+          from PIL import Image
+          import os, pathlib
+          # source icon is www/icon.png or icon.png
+          src = None
+          for p in ["www/icon.png", "icon.png", "www/Lencana_Pendidikan_MI_Liwaul_Islam.png"]:
+              if os.path.exists(p):
+                  src = p
+                  break
+          if not src:
+              print("Source icon not found!")
+              exit(1)
+          print(f"Using source icon: {src}")
+          im = Image.open(src).convert("RGBA")
+          sizes = {
+              "mipmap-mdpi": 48,
+              "mipmap-hdpi": 72,
+              "mipmap-xhdpi": 96,
+              "mipmap-xxhdpi": 144,
+              "mipmap-xxxhdpi": 192,
+          }
+          for folder, size in sizes.items():
+              res_dir = f"android/app/src/main/res/{folder}"
+              pathlib.Path(res_dir).mkdir(parents=True, exist_ok=True)
+              resized = im.resize((size, size), Image.LANCZOS)
+              resized.save(f"{res_dir}/ic_launcher.png", "PNG")
+              resized.save(f"{res_dir}/ic_launcher_round.png", "PNG")
+              resized.save(f"{res_dir}/ic_launcher_foreground.png", "PNG")
+              print(f"Generated {folder}")
+          # Also override any adaptive icon XML if exists - create simple mipmap-anydpi-v26
+          # Remove adaptive icon xml to force using png
+          import glob
+          for xml in glob.glob("android/app/src/main/res/mipmap-anydpi-v26/*.xml"):
+              print(f"Removing adaptive xml {xml}")
+              os.remove(xml)
+          # create 512 icon for reference
+          im.resize((512,512), Image.LANCZOS).save("icon-512.png")
+          print("Icons replaced successfully")
+          PY
 
       - name: Make gradlew executable
         run: chmod +x android/gradlew
@@ -49,5 +84,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Kuis-MI-Kelas-2-APK
+          name: Kuis-MI-Kelas-2-APK-Icon-Fixed
           path: android/app/build/outputs/apk/debug/app-debug.apk
